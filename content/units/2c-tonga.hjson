@@ -1,0 +1,102 @@
+type: naval
+Name: Tonga
+description: Shoots missiles and artilliery at enemies.
+health: 15250
+speed: 0.75
+armor: 12
+lightRadius: 250
+rotateSpeed: 1.5
+hitSize: 40
+rotateShooting: false
+lightColor: a488eb
+weapons: [
+  {
+  name: tonga-missile
+  inaccuracy: 10
+  shootSound: missile
+  rotate: true
+  rotateSpeed: 4
+  shots: 2
+   shoot: {
+shots: 2
+shotDelay: 3
+}
+  spacing: 0
+  x: 8
+  y: -6
+  reload: 16
+  recoil: 2
+  bullet: {
+    type: MissileBulletType
+    damage: 40
+    lifetime: 40
+    speed: 6
+    hitEffect: flakExplosion
+    splashDamage: 40
+    splashDamageRadius: 20
+    homingPower: 0.4
+    homingRange: 200
+    weaveMag: 4
+    weaveScale: 8
+    }
+ } 
+  {
+  name: tonga-missile
+  inaccuracy: 10
+  shootSound: missile
+  rotate: true
+  rotateSpeed: 4
+  shots: 2
+   shoot: {
+shots: 2
+shotDelay: 3
+}
+  spacing: 0
+  x: 17
+  y: -5
+  reload: 18
+  recoil: 2
+  bullet: {
+    type: MissileBulletType
+    damage: 40
+    lifetime: 40
+    hitEffect: flakExplosion
+    speed: 6
+    splashDamage: 40
+    splashDamageRadius: 20
+    homingPower: 0.4
+    homingRange: 200
+    weaveMag: 4
+    weaveScale: 8
+    }
+ } 
+ {
+    name: kuril-bomb
+    x: 5
+    y: -13
+    rotate: true
+    rotateSpeed: 3
+    reload: 45
+    recoil: 2.5
+    shootSound: artillery
+    shake: 2
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 45
+      splashDamage: 100
+      splashDamageRadius: 35
+      collides: true
+      collidesTiles: true
+      lifetime: 100
+      speed: 4.3
+      width: 18
+      height: 18
+      hitShake: 1
+      despawnEffect: flakExplosionBig
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke2
+    }
+ }
+]
+
+

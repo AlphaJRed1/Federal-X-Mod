@@ -1,0 +1,12 @@
+type: Floor
+variants: 0
+name: Spore Water
+description: spores have sunken underneath, causing them to infect other lands aswell.
+isLiquid: true
+liquidMultiplier: 0.9
+cacheLayer: water
+speedMultiplier: 0.8
+liquidDrop: water
+status: wet
+statusDuration: 150
+emitLight: false

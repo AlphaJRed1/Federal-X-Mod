@@ -1,0 +1,36 @@
+name: Large Uranium Wall
+description: A highly incredibly armored wall. Explodes when destroyed, leaving flames and scars.
+type: Wall
+health: 5000
+size: 2
+destroyEffect: {
+    type: ParticleEffect
+    particles: 7
+    sizeFrom: 12
+    sizeTo: 0
+    length: 100
+    baseLength: 4
+    lifetime: 60
+    colorFrom: 98fb98
+    colorTo: 90ee90
+    cone: 360
+    }
+baseExplosiveness: 5
+destroyBullet: {
+        type: BombBulletType
+    status: acidified
+   statusDuration: 355
+    knockback: 3
+despawnEffect: flakExplosionBig
+        splashDamageRadius: 60
+     pierce: true
+        splashDamage: 385
+        instantDisappear: true
+        hittable: false
+        collidesAir: true
+}
+requirements: [
+  uranium/24
+]
+category: defense
+research: uranium-wall

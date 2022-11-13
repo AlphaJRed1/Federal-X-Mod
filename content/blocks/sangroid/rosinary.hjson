@@ -1,0 +1,92 @@
+Name: Rosinary
+health: 1100
+description: Fires bombs that explode on impact.
+type: ItemTurret
+size: 3
+range: 240
+reload: 50
+recoil: 2
+targetGround: true
+targetAir: true
+velocityRnd: 0.2
+shots: 3
+   shoot: {
+shots: 3
+}
+spread: 0
+alternate: false
+shootSound: artillery
+ammoTypes: {
+  graphite: {
+    type: BasicBulletType
+    damage: 5
+    drag: 0.065
+    speed: 15
+    ammoMultiplier: 2
+    collides: true
+    inaccuracy: 10
+    lifetime: 60
+    splashDamage: 33
+    splashDamageRadius: 30 
+    height: 16
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    despawnEffect: flakExplosionBig
+    hitEffect: flakExplosionBig
+  }
+  thorium: {
+    type: BasicBulletType
+    damage: 10
+    drag: 0.065
+    speed: 15
+    ammoMultiplier: 3
+    collides: true
+    inaccuracy: 10
+    lifetime: 60
+    splashDamage: 50
+    splashDamageRadius: 35
+    height: 17.5
+    width: 17.5
+    pierceCap: 2
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    despawnEffect: flakExplosionBig
+    hitEffect: flakExplosionBig
+  }
+  venthyst: {
+    type: BasicBulletType
+    damage: 15
+    drag: 0.065
+    speed: 15
+    ammoMultiplier: 3
+    collides: true
+    inaccuracy: 10
+    lifetime: 60
+    splashDamage: 55
+    splashDamageRadius: 30
+    height: 17
+    width: 17
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    despawnEffect: flakExplosionBig
+    hitEffect: flakExplosionBig
+    fragBullets: 5
+    fragBullet: {
+    speed: 10
+    lifetime: 7
+    damage: 3
+    height: 11
+    width: 3
+    pierce: true
+    }
+  }
+}
+requirements: [
+  venthyst/100
+  silicon/200
+  thorium/65
+  graphite/50
+]
+category: turret
+research: railer

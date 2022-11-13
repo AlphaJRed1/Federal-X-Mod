@@ -1,0 +1,41 @@
+type: mech
+Name: Razor
+speed: 0.6
+description: Razor hot.
+health: 675
+armor: 7
+canBoost: false
+itemCapacity: 45
+hitSize: 11
+lightRadius: 140
+lightColor: 84f591
+weapons: [
+ {
+    name: razor-claw
+    x: -6
+    y: 0
+    rotate: true
+    rotateSpeed: 5
+    reload: 16
+rotationLimit: 20
+    shots: 2
+ top: false
+    recoil: -10
+    bullet: {
+    type: RailBulletType
+    damage: 74
+  recoil: -3
+   splashDamage: 15
+splashDamageRadius: 7
+      buildingDamageMultiplier: 1.2
+    pierce: true
+    length: 25
+    width: 7
+    height: 6
+    lifetime: 15
+    }
+  }
+]
+
+
+

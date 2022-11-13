@@ -1,0 +1,30 @@
+Type: TractorBeamTurret
+Name: Crease
+health: 2450
+description: Burns enemies, slowly gaining more damage overtime.
+size: 3
+heatColor: 9dffde
+hasPower: true
+laserColor: ffc88b
+smokeEffect: shootPyraFlame
+inaccuracy: 0
+consumes: {
+  power: 25
+}
+shots: 1
+targetAir: true
+laserWidth: 0.15
+targetGround: true
+damage: 100
+status: melting
+statusDuration: 200
+makeFire: true
+range: 300
+requirements: [
+  obamium/900
+  metaglass/1000
+  plastanium/1500
+  copper/2500
+]
+category: turret
+research: pierce

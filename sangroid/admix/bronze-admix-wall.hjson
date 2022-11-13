@@ -1,0 +1,11 @@
+name: Bronze Admix Wall
+description: A wall that opens for friendly units automatically.
+type: AutoDoor
+health: 1680
+size: 2
+requirements: [
+bronze-admix/12
+copper/5
+]
+category: defense
+research: copper-wall

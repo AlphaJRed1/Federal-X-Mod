@@ -1,0 +1,135 @@
+type: naval
+Name: Atoll
+description: Isle fires weaving missiles and an auto target minigun on its armor. Creates islets to accompany it. It can fly over terrain but very slowly.
+health: 1250
+armor: 9
+speed: 1.2
+rotateSpeed: 1
+hitSize: 24
+canBoost: true
+boostMultiplier: 0.5
+rotateShooting: false
+weapons: [
+  {
+  name: atoll-gun
+  inaccuracy: 0
+  spacing: 0
+  x: 10
+y: -0.1
+ rotate: false
+  mirror: true
+  shootCone: 180
+  reload: 35
+shoot: {
+shots: 2
+shotDelay: 10
+}
+top: true
+  recoil: 1
+    bullet: {
+      type: MissileBulletType
+      damage: 7
+      speed: 4
+      lifetime: 40
+      splashDamage: 40
+      width: 10
+      height: 12
+    trailWidth: 2
+    trailLength: 9
+ sprite: circle-bullet
+      splashDamageRadius: 20
+      homingPower: 0
+      weaveMag: 5
+      weaveScale: 3
+    }
+  }
+  {
+  name: atoll-gun
+  inaccuracy: 0
+  spacing: 0
+  x: 5
+y: 10.5
+ rotate: false
+  mirror: true
+  shootCone: 180
+  reload: 15
+shoot: {
+shots: 5
+shotDelay: 1
+}
+shootSound: missile
+layerOffset: -0.01f
+  recoil: 1
+    bullet: {
+      type: MissileBulletType
+      damage: 35
+      speed: 5
+      lifetime: 30
+      splashDamage: 25
+      width: 8
+      height: 10
+ sprite: circle-bullet
+      splashDamageRadius: 14
+      homingPower: 0
+      weaveMag: 5
+      weaveScale: 3
+    }
+  }
+  {
+  name: atoll-foreshadow
+   range: 250
+  rotate: true
+  rotateSpeed: 2.5
+  mirror: false
+  spacing: 0
+  x: 0
+  y: -7
+  reload: 155
+  recoil: 3
+            shootSound: railgun
+  bullet: {
+type: PointBulletType
+shootEffect: instShoot
+                    hitEffect: instHit
+                    smokeEffect: smokeCloud
+                    trailEffect: instTrail
+                    despawnEffect: instBomb
+                    trailSpacing: 20
+                    damage: 475
+                    speed: 250
+                    hitShake: 3
+   }
+ } 
+]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnX: 6
+    spawnY: -9
+    unit: archipelago
+    spawnTime: 435
+  }
+  {
+    type: UnitSpawnAbility
+    spawnX: -6
+    spawnY: -9
+    unit: archipelago
+    spawnTime: 435
+  }
+]
+engines: [
+  {
+    x: -7
+    y: -7
+    rotation: 90
+    radius: 7
+  }
+  {
+    x: 7
+    y: -7
+    rotation: 90
+    radius: 7
+   }
+ ]
+
+

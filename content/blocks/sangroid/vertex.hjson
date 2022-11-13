@@ -1,0 +1,41 @@
+Type: PowerTurret
+Name: Vertex
+health: 970
+description: Fires multiple sparks of electricity.
+size: 2
+shootEffect: lightningShoot
+shootCone: 20
+shootSound: spark
+targetAir: false
+range: 135
+reload: 35
+inaccuracy: 0
+shots: 3
+consumes: {
+  power: 6
+}
+   shoot: {
+shots: 3
+}
+shootType: {
+  type: LightningBulletType
+  damage: 25
+  lightningLength: 27
+}
+requirements: [
+  copper/100
+  obamium/25
+  titanium/75
+]
+category: turret
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: arc
+objectives: [
+    {
+      type: SectorComplete
+      preset: venthyst-fields
+    }
+  ]
+}

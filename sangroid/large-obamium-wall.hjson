@@ -1,0 +1,24 @@
+name: Large Obamium Wall
+description: A highly armored wall capable of healing surronding blocks with greater range than an obamium wall.
+type: MendProjector
+health: 3600
+size: 2
+reload: 220
+hasItems: false
+hasPower: false
+range: 17
+color: ffffff
+phaseBoost: 1
+healPercent: 1.5
+phaseRangeBoost: 1
+requirements: [
+  obamium/24
+  silicon/10
+]
+category: defense
+research: obamium-wall
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: obamium-wall
+}

@@ -1,0 +1,130 @@
+type: naval
+Name: Paragon
+description: Fires a beam of flame at enemies along with missiles that create electric puddles when despawned. Explodes on death that releases shrapnel.
+health: 325
+speed: 0.5
+armor: 1
+lightRadius: 200
+rotateSpeed: 0.5
+hitSize: 15
+rotateShooting: false
+lightColor: 84f591
+weapons: [
+  {
+  name: paragon-flame
+  inaccuracy: 0
+  shootSound: pulse
+  rotate: true
+  rotateSpeed: 2
+  mirror: false
+  x: 0
+  y: -6
+  recoil: 0
+alwaysContinuous: true
+  bullet: {
+   type: ContinuousFlameBulletType
+    damage: 3.3
+pierce: false
+colors: [98ffa9, 98ffa9, 84f591, 84f591, ffffff]
+flareColor: 84f591
+      collidesTeam: true
+length: 80
+  width: 2
+      healAmount: 7
+      hitEffect: hitLaser
+      smokeEffect: hitLaser
+     shootEffect: shootHeal
+   }
+ } 
+  {
+    name: explode
+    x: 0
+top: false
+    y: 0
+    rotate: false
+    reload: 2
+    recoil: 0
+    shootSound: shotgun
+controllable: false
+shootCone: 360
+noAttack: true
+shootOnDeath: true
+shoot: {
+type: ShootSpread
+    shots: 6
+spread: 30
+spacing: 30
+}
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 35
+      length: 45
+      width: 10
+      collidesTeam: true
+      healPercent: 2
+toColor: 84f591
+      lightColor: 84f591
+      hitEffect: hitEmpSpark
+fragRandomSpread: 15
+fragBullets: 1
+fragBullet: {
+      type: MissileBulletType
+      damage: 15
+      speed: 3
+      lifetime: 30
+      collidesTeam: true
+      healPercent: 0.5
+      splashDamage: 15
+      width: 10
+      height: 10
+      splashDamageRadius: 15
+      despawnEffect: hitEmpSpark
+      hitEffect: hitEmpSpark
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 4
+      weaveScale: 6
+}
+    }
+  }
+ {
+    name: paragon-gun
+    x: 4
+    y: 4
+    rotate: true
+    rotateSpeed: 3
+    recoil: 1.5
+    reload: 20
+    shootSound: lasershoot
+    bullet: {
+      type: MissileBulletType
+      damage: 7
+      speed: 2
+    drag: -0.03
+      puddles: 3
+   puddileRange: 4
+    puddleAmount: 10
+    puddleLiquid: electrified-water
+      lifetime: 40
+      collidesTeam: true
+      healPercent: 1
+      splashDamage: 20
+      splashDamageRadius: 20
+      despawnEffect: hitLaser
+      smokeEffect: hitLaser
+      homingPower: 0.3
+      homingRange: 100
+      hitEffect: hitLaser
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 2
+      weaveScale: 8
+    }
+ }
+]
+
+

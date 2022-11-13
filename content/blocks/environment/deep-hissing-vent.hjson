@@ -1,0 +1,8 @@
+type: SteamVent
+name: Deep Hissing Vent
+description: the deep stone alternate of hissing vent. slows down units even more.
+speedMultiplier: 0.5
+variants: 2
+effect: pulverizeMedium
+effectColor: ffffff
+effectSpacing: 20

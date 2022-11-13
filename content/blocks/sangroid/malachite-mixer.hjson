@@ -1,0 +1,51 @@
+type: GenericCrafter
+name: Malachite Mixer
+description: Makes malachite with lead and plastanium.
+size: 3
+hasPower: true
+hasItems: true
+craftTime: 70
+updateEffect: plasticburn
+craftEffect: plasticburn
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawWarmupRegion
+color: bfffc5
+}
+{
+type: DrawArcSmelt
+}
+]
+}
+consumes: {
+  power: 3.16
+  items: {
+    items: [
+      lead/2
+      plastanium/1
+    ]
+  }
+}
+requirements: [
+  venthyst/20
+  silicon/35
+  plastanium/15
+]
+category: crafting
+outputItem: malachite/1
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: plastanium-compressor
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}

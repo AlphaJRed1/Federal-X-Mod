@@ -1,0 +1,36 @@
+name: Uranium Wall
+description: A highly armored wall that explodes when destroyed, causing acid and flames to burst everywhere. Better to keep these at the front of defense.
+type: Wall
+health: 2000
+size: 1
+destroyEffect: {
+    type: ParticleEffect
+    particles: 5
+    sizeFrom: 10
+    sizeTo: 0
+    length: 50
+    baseLength: 2
+    lifetime: 60
+    colorFrom: 98fb98
+    colorTo: 90ee90
+    cone: 360
+    }
+baseExplosiveness: 2
+destroyBullet: {
+        type: BombBulletType
+    status: acidified
+   statusDuration: 225
+    knockback: 2
+despawnEffect: flakExplosion
+        splashDamageRadius: 40
+     pierce: true
+        splashDamage: 95
+        instantDisappear: true
+        hittable: false
+        collidesAir: true
+}
+requirements: [
+  uranium/6
+]
+category: defense
+research: volantic-drill

@@ -1,0 +1,8 @@
+type: Prop
+name: Withered Skull
+description: the darkness is coming
+variants: 3
+emitLight: true
+lightRadius: 100
+brightness: -5
+radius: 100

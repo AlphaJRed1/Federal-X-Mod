@@ -1,0 +1,6 @@
+type: material
+name: Bronze Admix
+description: A amalgam of copper and hints of silicon, melded together in the planet's core.
+hardness: 3
+cost: 2
+color: a57d6e

@@ -1,0 +1,58 @@
+Name:Advanced Factory
+description: Creates advanced versions of the basic tier 1 units.
+type: UnitFactory
+health: 3000
+size: 4
+consumes: {
+  power: 2.6
+}
+plans: [
+  {
+    unit: isle
+    time: 1625
+    requirements: [
+      silicon/30
+      metaglass/15
+      malachite/5
+    ]
+  }
+  {
+    unit: razor
+    time: 1675
+    requirements: [
+      silicon/40
+    uranium/10
+    ]
+  }
+  {
+    unit: acacia
+    time: 1600
+    requirements: [
+      silicon/25
+      mitaton/10
+    ]
+  }
+  {
+    unit: strike
+    time: 1440
+    requirements: [
+      silicon/20
+      thorium/35
+    ]
+  }
+  {
+    unit: tenebrous
+    time: 1580
+    requirements: [
+      silicon/15
+      bronze-admix/55
+    ]
+  }
+]
+requirements: [
+  silicon/50
+  graphite/35
+  thorium/50
+]
+research: ground-factory
+category: units

@@ -1,0 +1,89 @@
+Name: Tenebrous
+description: Drops fragmenting bombs and fires rail beams.
+type: flying
+flying: true
+health: 650
+armor: 2
+speed: 1.6
+rotateSpeed: 5
+drag: 0.06
+accel: 0.1
+hitSize: 15
+engineOffset: 3
+engineSize: 7
+faceTarget: false
+circleTarget: true
+rotateShooting: false
+weapons: [
+ {
+    name: tenebrous-gun
+    x: -6
+    y: -5
+    rotate: true
+    rotateSpeed: 5
+    reload: 15
+   alternate: true
+   top: false
+    recoil: 1
+    bullet: {
+    type: RailBulletType
+lineEffect: railTrail
+    damage: 65
+   pierce: false
+    length: 60
+    recoil: 0.3
+    width: 7
+    height: 6
+    lifetime: 10
+    }
+  }
+  {
+  name: bomb
+  shootCone: 360
+  ignoreRotation: true
+  minShootVelocity: 1.0
+  mirror: false
+  spacing: 0
+  x: 0
+  y: 0
+  shootY: -5
+  reload: 85
+  recoil: 0
+  shootSound: null
+  bullet: {
+      maxRange: 100
+  recoil: -1
+      type: BombBulletType
+      damage: 20
+      splashDamage: 60
+      splashDamageRadius: 20
+      lifetime: 25
+      width: 13
+      height: 13
+ hitEffect: flakExplosionBig
+ despawnEffect: flakExplosionBig
+fragBullets: 8
+fragRandomSpread: 0
+fragSpread: 45
+fragVelocityMin: 1
+fragBullet: {
+      damage: 10
+      splashDamage: 30
+      splashDamageRadius: 15
+      lifetime: 10
+      width: 10
+      height: 10
+ hitEffect: flakExplosion
+ despawnEffect: flakExplosion
+}
+   }
+  }
+]
+engines: [
+  {
+    x: 0
+    y: -10
+    rotation: 0
+    radius: 4
+  }
+ ]

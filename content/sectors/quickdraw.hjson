@@ -1,0 +1,15 @@
+planet: sangroid
+sector: 7
+difficulty: 2
+description: Deeps and Strikes make a home here. Use the Coilgun and other fast attackers to destroy them quickly.
+addStartingItems: true
+      captureWave: 30
+research: {
+parent: venthyst-fields
+objectives: [
+    {
+      type: SectorComplete
+      preset: venthyst-fields
+    }
+  ]
+}

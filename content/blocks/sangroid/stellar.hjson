@@ -1,0 +1,81 @@
+Type: PowerTurret
+Name: Stellar
+health: 5150
+description: Fires a large laser beam.
+size: 5
+shootSound: laserblast
+shootCone: 5
+targetAir: true
+rotateSpeed: 2
+range: 515
+reload: 560
+recoil: 8
+inaccuracy: 0
+shots: 1
+cooldownTime: 700
+drawer: {
+type: DrawTurret
+parts: [
+    {
+        suffix : -blade
+        type : RegionPart
+         mirror: true
+         under: false
+         moveX: 1
+         moveY: -2
+         moveRot: -10
+         progress: recoil
+          x: 0
+          y: 0
+    }
+    {
+        suffix : -back
+        type : RegionPart
+         mirror: false
+         under: true
+         moveX: 0
+         moveY: 3.5
+         moveRot: 0
+         progress: recoil
+          x: 0
+          y: 0
+    }
+]
+}
+consumes: {
+  power: 18
+}
+chargeSound: lasercharge
+chargeTime : 80
+chargeEffects : 1
+chargeEffect: greenLaserCharge
+shootType: {
+    type: LaserBulletType
+    damage: 600
+    status: electrified
+    statusDuration: 500
+    lifetime: 60
+    collidesTeam: true
+    healPercent: 20
+    ammoMultiplier: 1
+    lightningSpacing: 38
+    lightningLength: 8
+    lightningDelay: 2.5
+    lightningLengthRand: 25
+    lightningDamage: 50
+    lightningAngleRand: 40
+    lightColor: 84f591
+    largeHit: true
+    lightningColor: 84f591
+    length: 515
+    width: 125
+    colors:[84f59140, 84f591, ffffff]
+}
+requirements: [
+  obamium/250
+  surge-alloy/325
+  titanium/500
+  malachite/75
+]
+category: turret
+research: lavender

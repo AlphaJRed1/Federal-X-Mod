@@ -1,0 +1,14 @@
+name: Carbonic Rampart
+description: Incredibly armored wall, deflects bullets and absorbs lasers.
+type: Wall
+health: 12535
+size: 3
+chanceDeflect: 25
+absorbLasers: true
+requirements: [
+  carbonic-alloy/16
+  lead/125
+  graphite/15
+]
+category: defense
+research: carbonic-barrier

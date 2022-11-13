@@ -1,0 +1,68 @@
+type: mech
+Name: Detonator
+description: Fires giant bullets at enemies which deal massive damage and explosions.
+speed: 0.3
+health: 28045
+armor: 25
+hitSize: 41
+rotateSpeed: 2
+lightRadius: 245
+weapons: [
+ {
+    name: detonator-gun
+    top: false
+    x: 23
+    y: 2
+    rotate: false
+    reload: 165
+    recoil: 7
+    shots: 1
+    shootSound: artillery
+    shake: 7
+    bullet: {
+      type: standaardCopper
+      damage: 500
+      splashDamage: 1000
+      splashDamageRadius: 60
+      lifetime: 35
+      speed: 8
+      width: 25
+      height: 35
+      hitShake: 6
+      shootEffect: shootBig2
+      smokeEffect: shootBigSmoke2
+      despawnEffect: massiveExplosion
+      hitEffect: massiveExplosion
+      status: blasted
+      statusDuration: 300
+      fragBullets: 3
+      makeFire: true
+      fragBullet: {
+        type: LiquidBulletType
+        liquid: slag
+        lifetime: 3
+        speed: 1
+   splashDamage: 10
+  splashDamageRadius: 35
+        makeFire: true
+        status: burning
+        statusDuration: 300
+        fragBullets: 2
+        fragBullet: {
+            type: LiquidBulletType
+            liquid: oil
+            status: tarred
+   splashDamage: 10
+  splashDamageRadius: 35
+            statusDuration: 400
+            lifetime: 3
+            speed: 2
+            damage: 1
+        }
+      }
+    }
+  }
+ ]
+
+
+

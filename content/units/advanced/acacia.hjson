@@ -1,0 +1,50 @@
+type: tank
+rotateMoveFirst: true
+Name: Acacia
+description: Fires missiles at enemies. They knockback enemies and stun them for a while. Multiple Acacias can render one huge enemy useless.
+speed: 0.5
+health: 425
+armor: 20
+itemCapacity: 0
+rotateSpeed: 2.5
+baseRotateSpeed: 2.5
+faceTarget: false
+hitSize: 12
+lightRadius: 120
+lightColor: 84f591
+rotateShooting: false
+treadPullOffset: 4
+weapons: [
+ {
+    name: acacia-gun
+    x: 0
+   layerOffset: 0.2
+    y: 0
+parts: [
+    {
+        suffix : -part
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 0
+         moveY: -2
+         moveRot: -10
+         progress: reload
+          x: 5
+          y: 0
+    }
+]
+   mirror: false
+    reload: 30
+   rotate: true
+   rotateSpeed: 3.5
+    recoil: 1
+    shootSound: shootBig
+    bullet: {
+spawnUnit: tank-bomb
+    }
+ }
+]
+
+
+

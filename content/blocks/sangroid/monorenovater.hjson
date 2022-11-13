@@ -1,0 +1,39 @@
+type: Reconstructor
+Name: Monorenovater
+description: upgrades tier 3 federal-x units to their 4th tier.
+size: 7
+constructTime: 6095
+consumes: {
+  power: 5
+    items: {
+      items: [
+        metaglass/150
+        mitaton/75
+        plastanium/150
+        graphite/350
+surge-alloy/50
+      ]
+    }
+  liquid: {
+    liquid: armafluid
+    amount: 0.3
+  }
+}
+upgrades: [
+  [1r-meteor,1s-twilight]
+  [1m-electron,1n-gazelle]
+  [1c-bastove,1d-slash]
+  [2b-kuril,2c-tonga]
+  [1h-mirage, 1i-eidolon]
+  [1w-parry, 1x-dose]
+  [2g-paradigm, 2h-essence]
+]
+requirements: [
+  plastanium/575
+  silicon/400
+  mitaton/120
+  phase-fabric/80
+]
+category: units
+research: monoplicativer
+

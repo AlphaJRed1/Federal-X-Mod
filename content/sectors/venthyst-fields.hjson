@@ -1,0 +1,15 @@
+planet: sangroid
+sector: 15
+difficulty: 2
+description: Venthyst can be found here. Get it and research new things.
+addStartingItems: true
+      captureWave: 15
+research: {
+parent: armed-and-frosty
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+name: Electrified Water
+description: Not creatable. Can only be spawned by certain units.
+temperature: 0
+viscosity: 0.9
+heat-capacity: 0.9
+effect: electrified
+color: 84f591

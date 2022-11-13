@@ -1,0 +1,80 @@
+type: mech
+Name: Bastove
+description: Fires giant artilliery and has 2 mounts.
+speed: 0.4
+health: 2200
+armor: 14
+canBoost: false
+hitSize: 17
+lightRadius: 200
+weapons: [
+ {
+    name: bastove-gun
+    top: false
+    x: 10
+    y: 0.6
+    rotate: false
+    reload: 50
+    recoil: 2
+   top: false
+    shots: 1
+    shootSound: artillery
+    shake: 1
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 45
+      splashDamage: 75
+      splashDamageRadius: 20
+      collides: true
+      collidesTiles: true
+      lifetime: 45
+      speed: 5
+      width: 18
+      height: 17
+      hitShake: 1
+      shootEffect: shootBig2
+      smokeEffect: shootBigSmoke2
+      despawnEffect: flakExplosionBig
+      hitEffect: flakExplosionBig
+      status: burning
+      makeFire: true
+      statusDuration: 250
+      fragBullets: 5
+    fragRandomSpread: 45
+      fragBullet: {
+       damage: 9
+       speed: 5
+       lifetime: 10
+       height: 11
+       width: 8
+      }
+    }
+  }
+  {
+  name: mount-gun
+  inaccuracy: 0
+  shootSound: shoot
+  rotate: true
+  rotateSpeed: 6
+  shots: 1
+    top: true
+  spacing: 0
+  x: 5.5
+  y: -3.5
+  reload: 10
+  recoil: 1
+  bullet: {
+    type: standardCopper
+    damage: 11
+    height: 15
+    width: 9
+    status: burning
+    statusDuration: 100
+    lifetime: 23
+    speed: 5
+   }
+  }
+ ]
+
+
+

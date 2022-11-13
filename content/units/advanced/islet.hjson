@@ -1,0 +1,54 @@
+Name: Islet
+description: Shoots weaving missiles and heals units.
+type: flying
+flying: true
+health: 80
+armor: 2
+speed: 1.8
+rotateSpeed: 1.2
+controller: DefenderAI
+drag: 0.06
+accel: 0.1
+hitSize: 9
+engineOffset: 5
+engineSize: 3
+lowAltitude: true
+circleTarget: true
+rotateShooting: true
+weapons: [
+  {
+  name: islelheatlslsa
+  type: RepairBeamWeapon
+  rotate: false
+  mirror: false
+  x: 0
+  y: 3
+ } 
+  {
+  name: islet-gun
+  inaccuracy: 0
+  shootSound: shoot
+layerOffset: -0.01f
+  shootCone: 5
+  shots: 1
+  spacing: 0
+  x: 4
+  y: 0
+  reload: 10
+  recoil: 1
+  bullet: {
+      type: MissileBulletType
+      damage: 8
+      speed: 4.3
+      lifetime: 20
+      splashDamage: 9
+      width: 6
+      height: 7
+ sprite: circle-bullet
+      splashDamageRadius: 8
+      homingPower: 0
+      weaveMag: 5
+      weaveScale: 8
+   }
+  }
+]

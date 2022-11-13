@@ -1,0 +1,24 @@
+type: Floor
+name: Neuro Plate
+description: neuro shocks any unit that happens to walk over it.
+variants: 1
+status: {
+      name: neuro-shocked
+      show: true
+      damage: 0.25
+      speedMultiplier: 0.55
+      effectChance: 0.05
+      affinities: [wet]
+      transitionDamage: 20
+      effect: {
+        type: ParticleEffect
+        length: 1
+        particles: 2
+        lifetime: 50
+        sizeFrom: 2
+        sizeTo: 0.1
+        colorFrom: e0ffff
+        colorTo: 00ffff
+        }
+     }
+statusDuration: 100

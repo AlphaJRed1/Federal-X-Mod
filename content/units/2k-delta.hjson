@@ -1,0 +1,88 @@
+type: flying
+Name: Delta
+description: Protector of the Prime Core. Fires healing bullets at enemies. also has an arc shield.
+controller: BuilderAI
+health: 450
+speed: 3.75
+armor: 2
+mineTier: 3
+mineSpeed: 9
+buildSpeed: 12.5
+engineOffset: 7
+engineSize: 5
+itemCapacity: 100
+rotateSpeed: 15
+hitSize: 13
+drag: 0.02
+accel: 0.05
+flying: true
+isCounted: false
+weapons: [
+  {
+  name: 2k-delta-mount
+  inaccuracy: 0
+  shootSound: lasershoot
+  x: -5
+top: false
+  y: 3
+  reload: 15
+   shoot: {
+type: ShootSpread
+spread: 4
+spacing: 6
+shots: 3
+}
+  bullet: {
+    type: HealBulletType
+    damage: 17
+   splashDamage: 10
+    splashDamageRadius: 9
+    length: 17
+    speed: 7
+   collidesTeam: true
+   healPercent: 1
+   despawnEffect: hitLaser
+   smokeEffect: hitLaser
+    lifetime: 35
+    height: 12
+    width: 6
+    frontColor: ffffff
+    backColor: 98ffa9
+    buildingDamageMultiplier: 0.04
+  }
+  }
+]
+abilities: [
+  {
+    type: ShieldArcAbility
+    max: 45
+    cooldown: 60
+    radius: 14
+    y: -6
+    angle: 100
+    width: 20
+  }
+  {
+    type: ShieldArcAbility
+    max: 55
+    cooldown: 100
+    radius: 10
+    y: -5
+    angle: 80
+    width: 15
+  }
+]
+engines: [
+  {
+    x: -5
+    y: -6
+    rotation: -135
+    radius: 3
+  }
+  {
+    x: 5
+    y: -6
+    rotation: -45
+    radius: 3
+  }
+ ]

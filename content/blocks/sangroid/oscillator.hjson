@@ -1,0 +1,40 @@
+type: ItemTurret
+Name: Oscillator
+description: creates a shockwave that damages ground enemies.
+size: 2
+health: 1000
+range: 200
+targetGround: true
+targetAir: false
+shots: 1
+recoil: 0
+rotateSpeed: 0
+shake: 2
+shootCone: 360
+shootSound: explosionbig
+inaccuracy: 0
+cooldown: 0.007
+reload: 100
+shootY: 0
+ammoTypes: {
+  coal: {
+    damage: 1
+    splashDamage: 100
+    splashDamageRadius: 200
+    speed: 1
+    lifetime: 1
+    height: 18
+    collidesAir: false
+    width: 10
+    shootEffect: generatespark
+    smokeEffect: redgeneratespark
+    despawnEffect: spawnShockwave
+  }
+}
+requirements: [
+  copper/450
+  uranium/35
+  silicon/25
+]
+category: turret
+research: volantic-drill

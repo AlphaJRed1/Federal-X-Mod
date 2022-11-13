@@ -1,0 +1,6 @@
+type: material
+name: Obamium
+description: A resource that has healing properties.
+hardness: 6
+cost: 2
+color: 00d6d6

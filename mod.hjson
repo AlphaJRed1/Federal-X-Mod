@@ -1,0 +1,6 @@
+name: "Federal-X-Mod"
+displayName: "[orange]Federal-X[gold] Mod" //what displays in the mod selection menu
+author: "AJR1"
+description: "better"
+version: "3.0"
+minGameVersion: "136"

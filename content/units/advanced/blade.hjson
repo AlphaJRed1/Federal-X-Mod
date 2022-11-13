@@ -1,0 +1,50 @@
+type: mech
+Name: Blade
+description: Strikes and swipes enemies, and creates uranium bombers to help.
+speed: 0.5
+health: 1770
+armor: 10
+canBoost: false
+hitSize: 21
+lightRadius: 200
+weapons: [
+ {
+    name: bladecreator
+    x: 0
+    y: 0
+   mirror: false
+    reload: 160
+    recoil: 0
+    shootSound: none
+    bullet: {
+spawnUnit: uranium-bomb
+    }
+ }
+ {
+    name: blade-claw
+    x: -8
+    y: 3
+    rotate: true
+    rotateSpeed: 5
+rotationLimit: 20
+    reload: 16
+ top: false
+    recoil: -20
+    bullet: {
+    type: RailBulletType
+    damage: 335
+  recoil: -5
+   splashDamage: 23
+splashDamageRadius: 10
+      buildingDamageMultiplier: 1.2
+    pierce: true
+    length: 34
+    width: 7
+    height: 6
+    lifetime: 15
+    }
+  }
+]
+
+
+

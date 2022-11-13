@@ -1,0 +1,44 @@
+type: GenericCrafter
+name: Glaze
+description: A better kiln. Uses pyratite and lead and sand to create huge amounts of metaglass.
+size: 3
+hasPower: true
+hasItems: true
+craftTime: 100
+itemCapacity: 30
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawSpikes
+color: ffef99
+}
+{
+type: DrawFlame
+color: ffef99
+}
+]
+}
+updateEffect: plasticburn
+craftEffect: smeltsmoke
+consumes: {
+  power: 2.4
+  items: {
+    items: [
+      lead/3
+      sand/6
+      pyratite/2
+    ]
+  }
+}
+requirements: [
+  lead/100
+  graphite/50
+  titanium/50
+]
+category: crafting
+research: kiln
+outputItem: metaglass/10

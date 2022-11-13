@@ -1,0 +1,31 @@
+type: mech
+Name: Sapper
+description: Saps units.
+speed: 0.9
+health: 150
+armor: 1
+canBoost: false
+lightRadius: 120
+weapons: [
+ {
+    name: sapper-weapon
+    y: 3
+    x: 0
+    rotate: true
+    mirror: false
+    recoil: 2
+    reload: 15
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 17
+      knockback: 0
+      length: 90
+      sapStrength: 0.3
+      color: bf92f9
+      lightColor: a488eb
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+    }
+ }
+]

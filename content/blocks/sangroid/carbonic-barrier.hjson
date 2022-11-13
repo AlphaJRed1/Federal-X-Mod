@@ -1,0 +1,14 @@
+name: Carbonic Barrier
+description: This wall is so highly armored it can deflect bullets and absorb lasers.
+type: Wall
+health: 5250
+size: 2
+chanceDeflect: 20
+absorbLasers: true
+requirements: [
+  carbonic-alloy/8
+  lead/50
+  graphite/5
+]
+category: defense
+research: alloy-refluxer

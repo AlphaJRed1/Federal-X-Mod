@@ -1,0 +1,13 @@
+type: LiquidRouter
+name: Liquid Vessel
+description: A vessel capable of holding much more water than a liquid tank.
+size: 4
+health: 3000
+liquidCapacity: 5000
+research: liquid-tank
+category: liquid
+requirements: [
+titanium/100
+metaglass/50
+obamium/25
+]

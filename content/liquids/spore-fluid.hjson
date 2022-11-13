@@ -1,0 +1,9 @@
+type: CellLiquid
+name: Spore Fluid
+description: Strong Cement
+temperature: 0.4
+flammability: 0.2
+viscosity: 0.75
+effect: none
+spreadTarget: water
+color: 7457ce

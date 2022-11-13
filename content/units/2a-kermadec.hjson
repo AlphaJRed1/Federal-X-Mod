@@ -1,0 +1,89 @@
+type: naval
+Name: Kermadec
+description: Fires rapid piercing bullets and missiles.
+health: 810
+speed: 1
+rotateSpeed: 1.5
+armor: 5
+lightRadius: 15
+hitSize: 15
+rotateShooting: false
+lightColor: a488eb
+weapons: [
+ {
+    name: kermadec-missile
+    x: 0
+    y: 4
+    rotate: true
+    mirror: false
+    recoil: 1.5
+    shots: 2
+    reload: 25
+    shootSound: missile
+   shoot: {
+shots: 2
+shotDelay: 5
+}
+    bullet: {
+      type: MissileBulletType
+      damage: 2
+      speed: 6
+      lifetime: 25
+      splashDamage: 15
+      splashDamageRadius: 20
+      despawnEffect: flakExplosion
+      smokeEffect: shootBigSmoke
+      hitEffect: flakExplosion
+      weaveMag: 5
+      weaveScale: 2
+    }
+ }
+  {
+  name: kermadec-pierce
+  inaccuracy: 0
+  shootSound: shootBig
+  rotate: true
+  rotateSpeed: 3
+  shots: 2
+  spacing: 0
+rotationLimit: 50
+  shotDelay: 3
+   shoot: {
+shots: 2
+shotDelay: 3
+}
+shootCone: 130
+  x: -6
+  y: -4
+  reload: 60
+  recoil: 2
+parts: [
+    {
+        suffix : -edge
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 0
+         moveY: -2
+         moveRot: 0
+         progress: reload
+          x: 0
+          y: 0
+    }
+]
+  bullet: {
+    type: standardDense
+    damage: 30
+    lifetime: 22
+    height: 15
+    width: 10
+    pierceCap: 2
+    despawnEffect: hitBulletBig
+    hitEffect: hitBulletBig
+     smokeEffect: shootBigSmoke
+    speed: 8
+   }
+ } 
+]
+
+

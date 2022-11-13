@@ -1,0 +1,15 @@
+planet: sangroid
+sector: 20
+difficulty: 2
+description: Full of cryofluid lakes and new researches.
+addStartingItems: true
+      captureWave: 15
+research: {
+parent: federal-start
+objectives: [
+    {
+      type: SectorComplete
+      preset: federal-start
+    }
+  ]
+}

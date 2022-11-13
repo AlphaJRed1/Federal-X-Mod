@@ -1,0 +1,35 @@
+Name: Regen
+description: heals units.
+type: flying
+flying: true
+health: 200
+canHeal: true
+controller: DefenderAI
+armor: 2
+speed: 2.5
+rotateSpeed: 2.5
+payloadCapacity: 0
+drag: 0.02
+accel: 0.05
+hitSize: 10
+engineOffset: 4
+engineSize: 2
+lowAltitude: true
+circleTarget: false
+rotateShooting: true
+lightRadius: 100
+lightColor: 84f591
+itemCapacity: 25
+weapons: [
+  {
+  name: blabalsuckitnerds
+  type: RepairBeamWeapon
+  rotate: true
+  mirror: false
+  x: 0
+  y: 4
+    bullet: {
+maxRange: 50
+    }
+ } 
+]

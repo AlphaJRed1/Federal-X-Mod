@@ -1,0 +1,94 @@
+Name: Electron
+description: Fires sapping lasers and artilliery.
+type: legs
+hitSize: 18
+hovering: true
+allowLegStep: true
+visualElevation: 0.3
+groundLayer: 80
+health: 1750
+armor: 7
+speed: 0.45
+buildSpeed: 0.75
+legLength: 25
+legSplashDamage: 15
+legBaseOffset: 2
+legSplashRange: 15
+legExtension: 1.5
+maxStretch: 1.5
+lightRadius: 200
+weapons: [
+ {
+    name: small-sap-gun
+    y: 4.3
+    x: 4.5
+    rotate: true
+    recoil: 1
+    reload: 5
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 11
+      knockback: -0.6
+      length: 35
+      sapStrength: 0.3
+      color: bf92f9
+      lightColor: a488eb
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+    }
+ }
+ {
+    name: big-sap-gun
+    y: -0.8
+    x: 9.4
+   top: false
+    rotate: false
+    recoil: 3
+    reload: 10
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 35
+      knockback: -1.6
+      length: 85
+      sapStrength: 0.6
+      color: bf92f9
+      lightColor: a488eb
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+    }
+ }
+ {
+    name: sap-fuse
+    x: 0
+    y: -6.1
+    rotate: true
+    mirror: false
+    rotateSpeed: 3
+    reload: 65
+    recoil: 3.5
+    shootSound: artillery
+    shake: 1
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 35
+      splashDamage: 45
+      splashDamageRadius: 20
+      collides: true
+      collidesTiles: true
+      lifetime: 40
+      speed: 5
+      width: 15
+      length: 18
+      hitShake: 2
+      frontColor: bf92f9
+      backColor: a488eb
+      lightColor: bf92f9
+      despawnEffect: sapExplosion
+      hitEffect: sapExplosion
+      status: sapped
+      statusDuration: 250
+    }
+ }
+]

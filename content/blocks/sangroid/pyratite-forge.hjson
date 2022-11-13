@@ -1,0 +1,43 @@
+type: GenericCrafter
+name: Pyratite Forge
+description: Uses blast compressions and coolant to create pyratite.
+liquidCapacity: 30
+size: 3
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 125
+updateEffect: redgeneratespark
+craftEffect: generatespark
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawWarmupRegion
+}
+]
+}
+consumes: {
+  power: 1.75
+  items: {
+    items: [
+      blast-compound/1
+      metaglass/2
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.3
+  }
+}
+requirements: [
+  copper/150
+  metaglass/25
+  thorium/60
+]
+category: crafting
+research: blast-mixer
+outputItem: pyratite/6

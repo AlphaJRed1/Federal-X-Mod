@@ -1,0 +1,167 @@
+Name: Galaxi
+description: Fires multiple bullets and missiles from its maw, holding a suppresion field in it.
+type: payload
+flying: true
+health: 29350
+armor: 35
+speed: 1
+rotateSpeed: 2.5
+drag: 0.05
+accel: 0.05
+hitSize: 35
+engineOffset: 25
+engineSize: 12
+lowAltitude: false
+circleTarget: false
+rotateShooting: true
+lightRadius: 360
+lightColor: 84f591
+itemCapacity: 330
+weapons: [
+  {
+  name: flamegalaxi
+  inaccuracy: 0
+  shootSound: pulse
+  rotate: false
+  mirror: false
+  x: 0
+  y: 0
+shootY: 19
+  recoil: 0
+top: true
+alwaysContinuous: true
+  bullet: {
+   type: ContinuousFlameBulletType
+    damage: 9
+pierce: true
+colors: [98ffa9, 98ffa9, 84f591, 84f591, ffffff]
+flareColor: 84f591
+      collidesTeam: true
+drawSize: 120
+length: 140
+  width: 5
+      healAmount: 65
+      hitEffect: hitLaser
+      smokeEffect: hitLaser
+     shootEffect: shootHeal
+   }
+ } 
+ {
+    name: aghsgalaxi
+    y: 0
+    x: 0
+    rotate: false
+    top: false
+    recoil: 2.5
+    reload: 100
+cooldownTime: 100
+shake: 2
+xRand: 9
+shootY: 19
+   shoot: {
+shots: 7
+shotDelay: 4
+}
+    shotDelay: 4
+    shootSound: bigshot
+    bullet: {
+      status: electrified
+      statusDuration: 50
+      speed: 6
+      lifetime: 35
+      damage: 90
+      splashDamage: 80
+      splashDamageRadius: 10
+      height: 31
+      width: 18
+      frontColor: ffffff
+      backColor: 98ffa9
+      lightColor: 84f591
+      shootEffect: shootLiquid
+      smokeEffect: shootHeal
+      collidesTeam: true
+      healPercent: 2
+      hitEffect: hitEmpSpark
+      despawnEffect: hitEmpSpark
+      }
+    }
+  {
+  name: oohnicegalazi
+  inaccuracy: 60
+  spacing: 0
+  x: 0
+  rotate: false
+  mirror: false
+  top: false
+shootY: 19
+xRand: 9
+  reload: 45
+cooldownTime: 40
+  shootSound: lasershoot
+  y: 0
+shoot: {
+    shots: 2
+shotDelay: 3
+}
+    bullet: {
+      type: MissileBulletType
+      damage: 75
+hittable: false
+      speed: 5
+      lifetime: 35
+      collidesTeam: true
+      healPercent: 2.5
+      splashDamage: 60
+      width: 19
+      height: 19
+      splashDamageRadius: 30
+      despawnEffect: plasticExplosion
+      smokeEffect: hitEmpSpark
+      homingPower: 0
+      hitEffect: plasticExplosion
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 1
+      weaveScale: 5
+ trailInterval: 4
+trailParam: 5
+trailLength: 20
+trailWidth: 3
+bulletInterval: 5
+intervalBullets: 2
+intervalSpread: 200
+intervalAngle: 180
+ intervalRandomSpread: 25
+     intervalBullet: {
+      type: MissileBulletType
+      damage: 75
+      speed: 3
+      lifetime: 20
+      collidesTeam: true
+      healPercent: 0.5
+      splashDamage: 5
+      width: 12
+      height: 12
+      splashDamageRadius: 10
+      despawnEffect: hitEmpSpark
+      hitEffect: hitEmpSpark
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 4
+      weaveScale: 5
+}
+    }
+  }
+]
+abilities: [
+  {
+    type: SuppressionFieldAbility
+color: 84f591
+particleColor: 98ffa9
+y: 19
+  }
+]

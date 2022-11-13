@@ -1,0 +1,88 @@
+Name: Shallow
+description: Capable of flying at low depth, undetectable by anti-air craft but seen by ground turrets. Fires flak at enemies, along with dust trails.
+type: flying
+health: 9000
+ useEngineElevation: false
+hovering: true
+armor: 18
+speed: 1.5
+rotateSpeed: 2
+drag: 0.04
+accel: 0.1
+hitSize: 20
+engineOffset: 23
+engineSize: 8
+lowAltitude: true
+circleTarget: false
+lightRadius: 160
+weapons: [
+  {
+  name: sap-artilliery
+  inaccuracy: 25
+  shootSound: shoot
+  rotate: true
+  rotateSpeed: 4
+shoot: {
+  shots: 2
+  shotDelay: 5
+}
+  spacing: 0
+  x: 11
+  y: 11
+   top: true
+  reload: 15
+  recoil: 2
+  bullet: {
+    damage: 14
+   splashDamage: 45
+   splashDamageRadius: 20
+    width: 9
+    height: 13
+    lifetime: 25
+    speed: 5
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
+   }
+  }
+  {
+  name: big-sap-gun
+  inaccuracy: 20
+  shootSound: shoot
+  rotate: false
+shoot: {
+  shots: 2
+}
+  spacing: 0
+  x: 18
+  y: -13
+   top: true
+  reload: 45
+  recoil: 3
+  bullet: {
+type: MissileBulletType
+weaveMag: 4
+weaveScale: 6
+    damage: 41
+pierce: true
+pierceBuilding: true
+    width: 7
+    height: 7
+sprite: circle-bullet
+    lifetime: 50
+    speed: 4
+    hitEffect: generatespark
+    despawnEffect: generatespark
+  trailEffect:  generatespark
+   }
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+   effect: generatespark
+y: -24
+x: 0
+interval: 6
+  }
+]
+

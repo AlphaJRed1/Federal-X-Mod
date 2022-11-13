@@ -1,0 +1,4 @@
+type: OreBlock
+itemDrop: silicon
+wallOre: true
+variants: 3

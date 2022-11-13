@@ -1,0 +1,21 @@
+type: Conveyor
+name: Lead Conveyor
+description: more armored conveyor but moves slowly.
+health: 200
+requirements: [
+  copper/1
+  lead/1
+]
+category: distribution
+speed: 0.02
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: conveyor
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}

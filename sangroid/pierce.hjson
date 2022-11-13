@@ -1,0 +1,122 @@
+Name: Pierce
+description: Fires homing missiles that pierce enemies and frag on impact.
+type: ItemTurret
+health: 2200
+size: 3
+rotateSpeed: 3.2
+reload: 150
+recoil: 3
+range: 260
+ammoTypes: {
+  pyratite: {
+    type: MissileBulletType
+    damage: 60
+    pierceBuilding: true
+    lifetime: 80
+    drag: -0.03
+    splashDamage: 5
+    splashDamageRadius: 30
+      pierceCap: 10
+    homingPower: 0.4
+    homingRange: 200
+    sprite: federal-x-mod-spike
+fragOnHit: false
+    width: 10
+    height: 20
+    frontColor: cedb84
+    backColor: ffffff
+    trailColor: cedb84
+    makeFire: true
+    status: burning
+    statusDuration: 200
+    weaveMag: 4
+    weaveScale: 8
+    fragBullets: 10
+    fragLifeMin: 0.3
+    fragBullet: {
+      damage: 15
+      speed:5
+      lifetime: 10
+      height: 12
+      width: 9
+      frontColor: eff2ac
+      backColor: cedb84
+    }
+  }
+  surge-alloy: {
+    type: MissileBulletType
+    damage: 90
+    lifetime: 80
+    drag: -0.03
+fragOnHit: false
+    splashDamage: 12
+    splashDamageRadius: 30
+    pierceBuilding: true
+      pierceCap: 10
+    homingPower: 0.4
+    homingRange: 200
+    sprite: federal-x-mod-spike
+    width: 10
+    height: 20
+    frontColor: cedb84
+    lightning: 3
+    lightningDamage: 15
+    lightningLength: 8
+    backColor: ffffff
+    trailColor: cedb84
+    weaveMag: 4
+    weaveScale: 8
+    fragBullets: 10
+    fragLifeMin: 0.3
+    fragBullet: {
+      damage: 25
+      speed: 6
+      lifetime: 10
+      height: 12
+      width: 9
+      frontColor: eff2ac
+      backColor: cedb84
+    }
+  }
+  plastanium: {
+    type: MissileBulletType
+    damage: 75
+    lifetime: 80
+    drag: -0.03
+    splashDamage: 5
+    splashDamageRadius: 30
+      pierceCap: 12
+    homingPower: 0.4
+    homingRange: 200
+    sprite: federal-x-mod-spike
+    width: 10
+    height: 20
+    pierceBuilding: true
+fragOnHit: false
+    frontColor: cedb84
+    backColor: ffffff
+    trailColor: cedb84
+    weaveMag: 4
+    weaveScale: 8
+    fragBullets: 15
+    fragLifeMin: 0.3
+    fragBullet: {
+      damage: 20
+      speed: 6
+      lifetime: 10
+      height: 12
+      width: 9
+      frontColor: eff2ac
+      backColor: cedb84
+    }
+  }
+}
+category: turret
+requirements: [
+  lead/200
+  titanium/100
+  silicon/75
+  metaglass/50
+  phase-fabric/15
+]
+research: meltdown

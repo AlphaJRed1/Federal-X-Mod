@@ -1,0 +1,66 @@
+Name: Confetti
+description: Fires bullets and lasers at a face pace.
+type: flying
+flying: true
+health: 680
+armor: 5
+speed: 1.4
+rotateSpeed: 4
+drag: 0.06
+accel: 0.1
+hitSize: 13
+engineOffset: 6.5
+engineSize: 4
+lowAltitude: true
+circleTarget: false
+rotateShooting: true
+lightRadius: 120
+itemCapacity: 30
+weapons: [
+  {
+  name: confetti-weapon
+  inaccuracy: 0
+  shootSound: shoot
+  shots: 1
+  spacing: 0
+  x: 6.4
+  y: 1.6
+  reload: 8
+shootY: 1.6
+   top: false
+  recoil: 1
+  bullet: {
+    type: standardCopper
+    damage: 11
+    length: 15
+    width: 10
+    lifetime: 20
+    speed: 5
+   }
+  }
+  {
+  name: laserrr
+    top: false
+    mirror: false
+    x: 0
+    y: 7
+    reload: 70
+    recoil: 0
+    shootY: 1.8
+shoot: {
+shots: 2
+shotDelay: 10
+}
+    shootSound: laser
+    shake: 0
+    bullet: {
+      type: LaserBulletType
+      damage: 28
+      collidesTeam: false
+      recoil: 0
+      length: 85
+      colors: [e1a037, ffdfab, ffffff]
+      lightColor: ffdfab66
+   }
+  }
+]

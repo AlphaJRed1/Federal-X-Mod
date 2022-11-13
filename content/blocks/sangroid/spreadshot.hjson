@@ -1,0 +1,150 @@
+Name: Spreadshot
+health: 4500
+description: Fires multiple heavy shells of flak at enemies over long distances at a fast pace.
+type: ItemTurret
+size: 4
+range: 325
+reload: 30
+rotateSpeed: 3
+targetAir: false
+velocityRnd: 0.3
+shootShake: 3
+inaccuracy: 14
+recoil: 5.5
+xRand: 6
+ammoPerShot: 3
+   shoot: {
+shots: 3
+}
+shootSound: artillery
+ammoTypes: {
+  graphite: {
+    type: ArtilleryBulletType
+    ammoMultiplier: 1
+    firerate: 1
+    shake: 2
+    damage: 0
+    speed: 4
+    lifetime: 80
+    splashDamage: 33
+    splashDamageRadius: 20
+    height: 16
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: flakExplosion
+    knockback: 0.8
+  }
+  silicon: {
+    type: ArtilleryBulletType
+    ammoMultiplier: 3
+    firerate: 1.2
+    shake: 2
+    damage: 0
+    speed: 4
+    lifetime: 80
+    splashDamage: 33
+    splashDamageRadius: 20
+    height: 16
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: flakExplosion
+    knockback: 0.8
+    homingRange: 70
+  }
+  plastanium: {
+    type: ArtilleryBulletType
+    ammoMultiplier: 2
+    firerate: 1
+    shake: 2
+    damage: 0
+    speed: 4.2
+    lifetime: 80
+    splashDamage: 45
+    splashDamageRadius: 25
+    height: 16
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: plasticExplosionFlak
+    knockback: 1
+    fragBullets: 10
+    fragBullet: {
+        height: 4
+        width: 10
+        lifetime: 20
+        damage: 10
+    }
+  }
+  blast-compound: {
+    type: ArtilleryBulletType
+    ammoMultiplier: 4
+    firerate: 1
+    shake: 2
+    damage: 0
+    speed: 4
+    lifetime: 80
+    splashDamage: 50
+    splashDamageRadius: 30
+    height: 16
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: blastExplosion
+    knockback: 0.8
+    status: blasted
+    statusDuration: 150
+  }
+  pyratite: {
+    type: ArtilleryBulletType
+    ammoMultiplier: 2
+    firerate: 1
+    shake: 2
+    damage: 0
+    speed: 4
+    lifetime: 80
+    splashDamage: 35
+    splashDamageRadius: 20
+    height: 16
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: flakExplosion
+    knockback: 0.8
+    status: burning
+    statusDuration: 200
+  }
+  mitaton: {
+    type: ArtilleryBulletType
+    ammoMultiplier: 3
+    firerate: 1.2
+    shake: 3
+    damage: 0
+    speed: 4.5
+    lifetime: 80
+    splashDamage: 70
+    splashDamageRadius: 30
+    height: 17
+    width: 17
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: blastExplosion
+    knockback: 1.2
+    fragBullets: 4
+    fragBullet: {
+        height: 5
+        width: 5
+        lifetime: 30
+        damage: 5
+    }
+  }
+}
+requirements: [
+  copper/500
+  obamium/80
+  graphite/125
+  titanium/125
+]
+category: turret
+research: ripple

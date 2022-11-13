@@ -1,0 +1,88 @@
+type: naval
+Name: Kuril
+description: Fires rapid piercing piercing bullets and artilliery.
+health: 2615
+speed: 0.9
+armor: 8
+lightRadius: 170
+rotateSpeed: 1.7
+hitSize: 30
+rotateShooting: false
+lightColor: a488eb
+weapons: [
+  {
+  name: kermadec-pierce
+  inaccuracy: 0
+  shootSound: shootBig
+  rotate: true
+shootCone: 130
+rotationLimit: 50
+  rotateSpeed: 3
+  shots: 2
+   shoot: {
+shots: 2
+shotDelay: 3
+}
+  spacing: 0
+  shotDelay: 3
+  x: -9
+  y: -4
+  reload: 40
+  recoil: 2
+parts: [
+    {
+        suffix : -edge
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 0
+         moveY: -2
+         moveRot: 0
+         progress: reload
+          x: 0
+          y: 0
+    }
+]
+  bullet: {
+    type: standardDense
+    damage: 35
+    lifetime: 20
+    height: 20
+    width: 10
+    pierceCap: 2
+    despawnEffect: hitBulletBig
+    hitEffect: hitBulletBig
+     smokeEffect: shootBigSmoke
+    speed: 8
+   }
+ } 
+ {
+    name: kuril-bomb
+    x: 0
+    y: -7
+    rotate: true
+    rotateSpeed: 3
+    reload: 60
+    recoil: 2.5
+   mirror: false
+    shootSound: artillery
+    shake: 2
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 15
+      splashDamage: 100
+      splashDamageRadius: 30
+      collides: true
+      collidesTiles: true
+      lifetime: 60
+      speed: 4
+      width: 17
+      height: 17
+      hitShake: 1
+      despawnEffect: flakExplosion
+      hitEffect: flakExplosion
+    }
+ }
+]
+
+

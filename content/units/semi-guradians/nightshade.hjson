@@ -1,0 +1,94 @@
+type: naval
+Name: Nightshade
+description: Danger Stranger. Fires laser beams from all directions. Also has 2 barrels that fire dark energy orbs at enemies.
+health: 12560
+speed: 0.45
+armor: 15
+lightRadius: 200
+hitSize: 45
+rotateSpeed: 1.2
+rotateShooting: false
+lightColor: a488eb
+immunities: [fear, freezing, frosted]
+weapons: [
+ {
+    name: nightshade-laser
+    y: 0
+    x: 0
+    rotate: false
+    recoil: 4
+   mirror: false
+    reload: 100
+    alternate: false
+    continuous: true
+    shootSound: beam
+  baseRotation: 0
+    shootY: 18
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 50
+      length: 125
+      lifetime: 100
+      drawSize: 125
+      width: 7.5
+      colors: [d06b53, ff8a35, ffa665]
+      lightColor: ffa665
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 6
+        lifetime: 16
+        length: 10
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 5
+        lenTo: 0
+        colorFrom: d06b53
+        colorTo: ff8a35
+      }
+    }
+    }
+ {
+    name: nightshade-gun
+    y: 11
+    x: 16
+    rotate: true
+    rotateSpeed: 4
+    recoil: 1.5
+    reload: 50
+inaccuracy: 5
+    velocityRnd: 0.75
+    shootSound: plasmaboom
+  shoot: {
+shots: 10
+}
+    bullet: {
+      type: MissileBulletType
+    damage: 45
+    splashDamage: 50
+    splashDamageRadius: 25
+    lifetime: 35
+    height: 16
+    width: 14
+   trailLength: 15
+  frontColor: 303138
+  backColor: 000000
+  trailColor: 303138
+    despawnEffect: flakExplosionBig
+    hitEffect: flakExplosionBig
+    speed: 7
+    status: fear
+   statusDuration: 200
+    }
+ }
+]
+abilities: [
+{
+type: StatusFieldAbility
+effect: overclock
+range: 100
+duration: 100
+reload: 200
+}
+]
+

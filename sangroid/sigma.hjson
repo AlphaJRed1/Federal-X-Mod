@@ -1,0 +1,116 @@
+Name: Sigma
+description: Shoots an orb which releases an emp shockwave and lightning fragments.
+type: ItemTurret
+health: 1750
+size: 2
+rotateSpeed: 3
+reload: 100
+recoil: 2.5
+recoilTime: 200
+cooldownTime: 90
+shootSound: plasmaboom
+range: 300
+heatColor: 98ffa9
+ammoTypes: {
+  malachite: {
+    sprite: circle-bullet
+    shootEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 10
+        lifetime: 60
+        length: 100
+        strokeFrom: 10
+        strokeTo: 0
+        lenFrom: 20
+        lenTo: 0
+        cone: 360
+        colorFrom: ffffff
+        colorTo: 98ffa9
+      }
+    damage: 50
+    splashDamage: 150
+    splashDamageRadius: 50
+    shrinkY: 0
+    status: electrified
+    statusDuration: 200
+    height: 22
+    width: 22
+    lifetime: 60
+    speed: 5
+    despawnEffect: {
+    type: multiEffect
+    lifetime: 60
+    effects: [
+    {
+    type: ParticleEffect
+    particles: 4
+    sizeFrom: 10
+    sizeTo: 0
+    length: 60
+    baseLength: 10
+    lifetime: 60
+    sprite: federal-x-mod-spike
+    colorFrom: ffffff
+    colorTo: 98ffa9
+    cone: 360
+    }
+    {
+    type: WaveEffect
+    lifetime: 30
+    rotation: 5
+    sides: 4
+    sizeFrom: 0
+    sizeTo: 50
+    strokeFrom: 10
+    strokeTo: 0
+    colorFrom: ffffff
+    colorTo: 98ffa9
+          }
+      ]
+    }
+    hitEffect: {
+    type: multiEffect
+    lifetime: 60
+    effects: [
+    {
+    type: ParticleEffect
+    particles: 4
+    sizeFrom: 10
+    sizeTo: 0
+    length: 60
+    baseLength: 10
+    lifetime: 60
+    sprite: federal-x-mod-spike
+    colorFrom: ffffff
+    colorTo: 98ffa9
+    cone: 45
+    }
+    {
+    type: WaveEffect
+    lifetime: 30
+    rotation: 5
+    sides: 4
+    sizeFrom: 0
+    sizeTo: 50
+    strokeFrom: 10
+    strokeTo: 0
+    colorFrom: ffffff
+    colorTo: 98ffa9
+          }
+      ]
+    }
+    frontColor: ffffff
+    backColor: 98ffa9
+    lightning: 4
+    lightningDamage: 20
+    lightningLength: 16
+    lightningColor: 84f591
+   }
+}
+category: turret
+requirements: [
+plastanium/30
+malachite/45
+]
+research: shred

@@ -1,0 +1,13 @@
+name: Titanium Router
+description: fast boi.
+type: Router
+health: 55
+speed: 12
+size: 1
+requirements: [
+  copper/5
+  titanium/2
+  lead/2
+]
+category: distribution
+research: router

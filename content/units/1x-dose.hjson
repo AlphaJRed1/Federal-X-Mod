@@ -1,0 +1,91 @@
+Name: Dose
+description: fires a fuse that releases homing missiles, Plus a forcefiled that absorbs lasers and deflects bullets.
+type: payload
+flying: true
+health: 14555
+armor: 14
+speed: 2
+rotateSpeed: 2.5
+drag: 0.01
+accel: 0.06
+hitSize: 25
+engineOffset: 15
+engineSize: 10
+circleTarget: false
+rotateShooting: true
+lightRadius: 180
+lightColor: 84f591
+itemCapacity: 130
+payloadCapacity: 6
+weapons: [
+  {
+    name: dose-gun
+    x: 21
+top: false
+    y: -2.5
+    rotate: true
+    rotateSpeed: 2.5
+    reload: 45
+    recoil: 2
+    shootSound: shotgun
+rotationLimit: 60
+shoot: {
+type: ShootSpread
+    shots: 4
+spread: 13
+spacing: 13
+}
+    shootY: 4
+    bullet: {
+      type: ShrapnelBulletType
+      damage: 60
+      length: 65
+      width: 18
+      collidesTeam: true
+      healPercent: 3
+toColor: 84f591
+      lightColor: 84f591
+      hitEffect: hitEmpSpark
+fragRandomSpread: 35
+fragBullets: 2
+fragBullet: {
+      type: MissileBulletType
+      damage: 15
+      speed: 5
+      lifetime: 35
+      collidesTeam: true
+      healPercent: 0.5
+      splashDamage: 15
+      width: 10
+      height: 10
+      splashDamageRadius: 15
+      despawnEffect: hitEmpSpark
+      hitEffect: hitEmpSpark
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 3
+      weaveScale: 5
+}
+    }
+  }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 130
+    regen: 4
+    max: 1250
+    cooldown: 780
+    absorbLasers: true
+  }
+]
+engines: [
+  {
+    x: 0
+    y: -12
+    rotation: 90
+    radius: 6
+  }
+ ]

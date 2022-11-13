@@ -1,0 +1,14 @@
+type: LiquidRouter
+name: Carbonic Conduit
+description: Made out of carbonic alloy. can be placed on liquids. Doesnt leak. uselsess.
+health: 560
+armor: 3
+size: 2
+ liquidPressure: 1.2
+liquidCapacity: 25
+requirements: [
+metaglass/10
+carbonic-alloy/1
+]
+category: liquid
+research: armored-conduit

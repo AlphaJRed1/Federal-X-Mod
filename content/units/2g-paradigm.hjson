@@ -1,0 +1,75 @@
+type: naval
+Name: Paradigm
+description: Has a distinct style. It fires electric shells and sends naval electric bombs that releases missiles.
+health: 1245
+speed: 0.55
+armor: 7
+lightRadius: 210
+rotateSpeed: 0.5
+hitSize: 17
+rotateShooting: false
+lightColor: 84f591
+weapons: [
+  {
+  name: epitome-gun
+  inaccuracy: 10
+  shootSound: plasmaboom
+  rotate: true
+  rotateSpeed: 3.2
+  mirror: true
+  x: -8
+  y: -11
+  reload: 40
+  recoil: 2
+  bullet: {
+    type: ArtilleryBulletType
+   damage: 30
+    splashDamage: 207
+    splashDamageRadius: 35
+      frontColor: ffffff
+      backColor: 98ffa9
+      collidesTeam: true
+      healPercent: 10
+      sprite: circle-bullet
+      shrinkY: 0
+      status: electrified
+      puddles: 3
+   puddileRange: 7
+    puddleAmount: 15
+    puddleLiquid: electrified-water
+      statusDuration: 80
+      despawnEffect: hitLaser
+      hitEffect: hitLaser
+      smokeEffect: hitLaser
+    lifetime: 50
+    height: 17
+    width: 17
+    despawnEffect: hitMeltHeal
+    hitEffect: hitMeltHeal
+     smokeEffect: shootBigSmoke
+    speed: 4
+   }
+ } 
+ {
+    name: bomber
+    x: 0
+    y: 0
+    rotate: true
+    rotateSpeed: 10
+    recoil: 0
+    reload: 120
+    shootSound: none
+    bullet: {
+spawnUnit: electric-bomb
+    }
+ }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 40
+    regen: 2
+    max: 200
+    cooldown: 350
+  }
+]

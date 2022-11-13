@@ -1,0 +1,62 @@
+type: GenericCrafter
+name: Mitaton Compressor
+description: Uses tough compression and mix procedures to produce mitaton in bursts.
+liquidCapacity: 50
+size: 3
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 225
+craftEffect: flakExplosion
+updateEffect: generatespark
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: cryofluid
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 2
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 4.5
+}
+{
+type: DrawDefault
+}
+{
+type: DrawWarmupRegion
+}
+]
+}
+consumes: {
+  power: 1.75
+  items: {
+    items: [
+      obamium/6
+      silicon/3
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.3
+  }
+}
+requirements: [
+  copper/25
+  silicon/75
+  obamium/35
+  metaglass/60
+]
+category: crafting
+research: silicon-crucible
+outputItem: mitaton/6

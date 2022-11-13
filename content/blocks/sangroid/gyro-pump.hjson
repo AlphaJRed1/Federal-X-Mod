@@ -1,0 +1,20 @@
+Name: Gyro Pump
+description: Bigger and better pump. Requires power.
+type: Pump
+size: 4
+health: 2500
+hasPower: true
+consumes: {
+  power: 1.66
+}
+pumpAmount: 0.27
+squareSprite: false
+liquidCapacity: 70
+requirements: [
+  lead/200
+  metaglass/80
+  silicon/60
+  obamium/40
+]
+category: liquid
+research: thermal-pump

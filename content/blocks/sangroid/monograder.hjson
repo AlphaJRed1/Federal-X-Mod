@@ -1,0 +1,32 @@
+type: Reconstructor
+Name: Monograder
+description: upgrades tier 1 federal-x units to their 2nd tier.
+size: 3
+constructTime: 1950
+consumes: {
+  power: 2.8
+    items: {
+      items: [
+        obamium/65
+        silicon/30
+        graphite/15
+      ]
+    }
+}
+upgrades: [
+  [1a-dome, 1b-bracker]
+  [1k-sapper, 1l-turbo]
+  [1p-sparkle, 1q-confetti]
+  [1z-deep, 2a-kermadec]
+  [1f-shade, 1g-specter]
+  [1u-regen, 1v-aegis]
+  [2e-paragon, 2f-epitome]
+]
+requirements: [
+  silicon/100
+  titanium/55
+  obamium/75
+]
+category: units
+research: monolith-reconstructor
+

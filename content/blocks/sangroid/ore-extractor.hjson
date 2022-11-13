@@ -1,0 +1,49 @@
+name: Ore Extractor
+description: Extracts ores from the ground.
+type: AttributeCrafter
+attribute: water
+size: 3
+craftTime: 160
+craftEffect: railHit
+hasLiquids: true
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawLiquidRegion
+drawLiquid: water
+}
+{
+type: DrawBubbles
+color: 6a7ac5ff
+spread: 6
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 3
+}
+{
+type: DrawRegion
+suffix: -top
+}
+]
+}
+consumes: {
+  power: 4.83
+  liquid: {
+    liquid: water
+    amount: 0.4
+  }
+}
+outputItems: [lead/2,titanium/2,thorium/1,obamium/1,uranium/1]
+requirements: [
+silicon/160
+  malachite/30
+  mitaton/25
+]
+category: production
+research: stratera-drill

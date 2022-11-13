@@ -1,0 +1,26 @@
+name: Uranium Mender
+description: Heals structures and has long range. Requires uranium.
+type: MendProjector
+health: 500
+size: 1
+color: 98fb98
+phase: 90ee90
+reload: 90
+range: 100
+healPercent: 7
+useTime: 400
+consumes: {
+  power: 1.66
+  items: {
+    items: [
+      uranium/1
+    ]
+  }
+}
+requirements: [
+  titanium/15
+  lead/50
+  uranium/15
+]
+category: effect
+research: mender-dome

@@ -1,0 +1,6 @@
+type: material
+name: Malachite
+description: A very fragile resource.
+hardness: 1
+cost: 3
+color: 92f59b

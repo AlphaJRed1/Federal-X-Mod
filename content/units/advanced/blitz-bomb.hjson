@@ -1,0 +1,62 @@
+type: missile
+controller: MissileAI
+flying: true
+speed: 10
+hitSize: 7
+maxRange: 6
+lifetime: 50
+hidden: true
+engineSize: 6
+rotateSpeed: 0.5
+missileAccelTime: 40
+lowAltitude: true
+engineOffset: 4
+fogRadius: 6
+health: 25
+trailLength: 11
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+weapons: [
+    {
+        shootCone: 360
+          mirror: false
+          reload: 180
+          shootOnDeath: true
+          shootEffect: none
+          x: 0
+          y: 0
+          despawnHit: true
+          despawnEffect: flakExplosionBig
+          bullet: {
+        type: BombBulletType
+        splashDamageRadius: 20
+        splashDamage: 100
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+  fragBullets: 7
+   fragBullet: {
+    damage: 13
+   speed: 6
+    height: 8
+    width: 8
+   }
+        }
+    }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    damage: 25
+    length: 8
+    minSpeed: 0.7
+    maxSpeed: 1
+    offset: 5
+    color: ffffff
+  }
+]

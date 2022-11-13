@@ -1,0 +1,108 @@
+Name: Supernova
+description: Fires 2 mega penetrating beams simultaneously, along with missiles that sap units.
+type: legs
+hitSize: 32
+hovering: true
+drawShields: false
+allowLegStep: true
+visualElevation: 0.5
+groundLayer: 80
+health: 27000
+armor: 14
+speed: 0.5
+buildSpeed: 10.
+legCount: 4
+legLength: 40
+legSplashDamage: 140
+legBaseOffset: 30
+legSplashRange: 25
+legExtension: -30
+maxStretch: 3
+lightRadius: 60
+lightColor: 84f591
+weapons: [
+ {
+    name: supernova-sap-missle
+    x: 11.6
+    y: -10.4
+rotate: true
+flipSprite: true
+    rotateSpeed: 4
+    reload: 14
+    recoil: 2
+    shootSound: missile
+    bullet: {
+      type: MissileBulletType
+      damage: 20
+      speed: 5
+      lifetime: 50
+      splashDamage: 20
+      splashDamageRadius: 17
+      despawnEffect: flakExplosion
+      homingPower: 0.3
+      homingRange: 100
+      hitEffect: none
+      frontColor: bf92f9
+      backColor: a488eb
+      trailColor: a488eb
+      lightColor: bf92f9
+      weaveMag: 4
+      weaveScale: 8
+fragBullets: 8
+fragRandomSpread: 0
+fragSpread: 45
+fragVelocityMin: 1
+fragBullet: {
+      type: SapBulletType
+      damage: 7
+      knockback: 0.4
+      length: 50
+      sapStrength: 0.4
+      color: bf92f9
+      lightColor: a488eb
+      hitEffect: hitLiquid
+}
+    }
+ }
+  {
+    name: supernova-laser
+    x: 12
+    y: 5
+    reload: 220
+    alternate: false
+ flipSprite: true
+    recoil: 4
+    continuous: true
+    shootSound: beam
+rotate: false
+  shootCone: 360
+    shootY: 11
+  top: false
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 75
+      length: 170
+   recoil: 0.02
+      lifetime: 150
+      drawSize: 150
+      width: 6
+      colors: [bf92f9, a488eb, bf92f9]
+      status: sapped
+      statusDuration: 200
+      lightColor: bf92f9
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 7
+        lifetime: 15
+        length: 15
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: bf92f9
+        colorTo: a488eb
+      }
+    }
+  }
+]

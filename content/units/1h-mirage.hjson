@@ -1,0 +1,122 @@
+Name: Mirage
+description: fires a barrage of bullets at enemies. Can fly over terrain.
+type: legs
+hitSize: 15
+hovering: true
+canBoost: true
+boostMultiplier: 1.7
+itemCapacity: 85
+buildSpeed: 2
+allowLegStep: true
+visualElevation: 0.35
+stepShake: 0
+legCount: 6
+legBaseOffset: 7
+health: 1995
+armor: 10
+speed: 0.45
+lightRadius: 160
+lightColor: 84f591
+ engineOffset: 11
+engineSize: 7
+weapons: [
+ {
+    name: mirage-gun
+    y: 5
+    x: 8
+    rotate: false
+    top: false
+    recoil: 2.5
+    reload: 70
+shootY: 3
+   shoot: {
+shots: 3
+shotDelay: 4
+}
+    shootSound: bigshot
+    bullet: {
+      status: electrified
+      statusDuration: 50
+      speed: 5
+      lifetime: 35
+      damage: 25
+      splashDamage: 16
+      splashDamageRadius: 10
+      height: 20
+      width: 12
+      frontColor: ffffff
+      backColor: 98ffa9
+      lightColor: 84f591
+      shootEffect: shootLiquid
+      smokeEffect: shootHeal
+      collidesTeam: true
+      healPercent: 5
+   pierceCap: 2
+  pierceBuilding: true
+      despawnEffect: {
+      type: WaveEffect
+      lifetime: 15
+      sizeFrom: 0
+      sizeTo: 20
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: 98ffa9
+      colorTo: ffffff
+        }
+      hitEffect: {
+      type: WaveEffect
+      lifetime: 15
+      sizeFrom: 0
+      sizeTo: 20
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: 98ffa9
+      colorTo: ffffff
+        }
+      }
+    }
+ {
+    name: specter-gun
+    y: -10
+    x: 0
+    rotate: true
+    recoil: 2
+    reload: 35
+  mirror:
+  top: true
+    shootSound: lasershoot
+    bullet: {
+      type: MissileBulletType
+      sprite: large-bomb
+      status: electrified
+      statusDuration: 70
+      speed: 4
+      lifetime: 50
+      damage: 10
+      splashDamage: 30
+      splashDamageRadius: 30
+      height: 12
+      width: 12
+      weaveScale: 0
+      weaveMag: 0
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      shootEffect: shootLiquid
+      smokeEffect: shootHeal
+      collidesTeam: true
+      healPercent: 5
+      hitEffect: hitLaser
+      despawnEffect: hitLaser
+      }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 155
+    reload: 230
+    range: 70
+  }
+]

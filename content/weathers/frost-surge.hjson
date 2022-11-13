@@ -1,0 +1,21 @@
+type: ParticleWeather
+name: Frost Surge
+description: frosts every one. lasts for a little while.
+baseSpeed: 0.1
+color: bfdfff
+density: 450
+useWindVector: true
+particleRegion: particle
+sizeMin: 35
+sizeMax: 70
+minAlpha: 0.1
+maxAlpha: 0.2
+drawNoise: true
+noiseColor: bfdfff10
+noiseLayers: 4
+noiseScale: 1400
+noisePath: fog
+noiseLayerSclM: 0.5
+noiseLayerAlphaM: 0.1
+status: frosted
+statusDuration: 500

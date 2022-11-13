@@ -1,0 +1,4 @@
+type: OreBlock
+itemDrop: lapis
+variants: 3
+placeableLiquid: true

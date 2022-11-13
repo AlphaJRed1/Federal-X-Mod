@@ -1,0 +1,33 @@
+Type: PowerTurret
+Name: Levin
+description: Fires heavy point lasers at enemies. Their main weakness is range and that their health is very low for a turret.
+size: 2
+range: 125
+health: 350
+reload: 6
+shootSound: bolt
+consumes: {
+  power: 2.54
+}
+shootType: {
+  type: PointLaserBulletType
+  damage: 10
+range: 125
+}
+requirements: [
+  copper/100
+  obamium/25
+  titanium/75
+]
+category: turret
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: arc
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}

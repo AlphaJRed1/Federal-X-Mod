@@ -1,0 +1,68 @@
+type: mech
+Name: Slash
+description: Fires ripples of artilliery at enemies.
+speed: 0.37
+health: 17200
+armor: 16
+canBoost: false
+hitSize: 28
+itemCapacity: 120
+lightRadius: 220
+rotateSpeed: 2.5
+targetAir: false
+weapons: [
+ {
+    name: slash-ripple
+    top: false
+    x: 18.6
+    y: 1.8
+    rotate: false
+    reload: 125
+    inaccuracy: 15
+    recoil: 2.5
+    shootSound: artillery
+velocityRnd: 0.2
+    shake: 3
+   shoot: {
+shots: 4
+shotDelay: 0
+}
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 70
+      splashDamage: 96
+      splashDamageRadius: 30
+      makeFire: true
+      collides: true
+      collidesTiles: true
+      lifetime: 55
+      speed: 4.5
+      width: 17
+      height: 17
+      hitShake: 2
+      shootEffect: shootBig2
+      smokeEffect: shootBigSmoke2
+      despawnEffect: massiveExplosion
+     hitEffect: massiveExplosion
+      status: burning
+      statusDuration: 450
+      fragBullets: 10
+   fragRandomSpread: 60
+      fragBullet: {
+      type: ArtilleryBulletType
+      damage: 7
+      splashDamage: 32
+      splashDamageRadius: 15
+       speed: 4
+      despawnEffect: flakExplosion
+     hitEffect: flakExplosion
+       lifetime: 15
+       height: 12
+       width: 12
+      }
+    }
+  }
+ ]
+
+
+

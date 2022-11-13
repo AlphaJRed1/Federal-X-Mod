@@ -1,0 +1,8 @@
+type: material
+name: Uranium
+description: A resource that has incredibly high radioactive charges.
+hardness: 8
+cost: 4
+radioactivity: 1.5
+explosiveness: 0.05
+color: a0ab8e

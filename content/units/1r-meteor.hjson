@@ -1,0 +1,88 @@
+Name: Meteor
+description: Releases a shower of bullets upon enemies.
+type: flying
+flying: true
+health: 1475
+armor: 6
+speed: 1.35
+rotateSpeed: 3
+drag: 0.06
+accel: 0.1
+hitSize: 20
+engineOffset: 12
+engineSize: 6
+lowAltitude: true
+circleTarget: false
+faceTarget: false
+rotateShooting: false
+lightRadius: 170
+itemCapacity: 90
+weapons: [
+  {
+  name: mount-gun
+  inaccuracy: 0
+  shootSound: shoot
+  rotate: true
+  rotateSpeed: 6
+  shots: 1
+  spacing: 0
+  x: 4.3
+  y: 9
+  reload: 7
+  recoil: 1
+  bullet: {
+    type: standardCopper
+    damage: 11
+    height: 12
+    width: 9
+    lifetime: 28
+    speed: 5
+   }
+  }
+  {
+  name: mount-gun
+  inaccuracy: 0
+  shootSound: shoot
+  shots: 1
+  spacing: 0
+  rotate: true
+  rotateSpeed: 6
+  x: 5.2
+  y: -5
+  reload: 10
+  recoil: 1
+  bullet: {
+    type: standardCopper
+    damage: 11
+    height: 12
+    width: 9
+    lifetime: 28
+    speed: 5
+   }
+  }
+  {
+  name: artilliery-mount
+    x: 8.6
+    y: 3
+    reload: 25
+    recoil: 2.5
+  rotate: true
+  rotateSpeed: 4
+    shootY: 2
+    shootSound: artilliery
+    shootEffect: shootBig
+    shake: 2
+    bullet: {
+    damage: 35
+    splashDamage: 25
+    splashDamageRadius: 20
+    height: 17
+    despawnEffect: flakExplosion
+    hitEffect: flakExplosion
+    width: 13
+    lifetime: 18
+    speed: 7
+
+   }
+  }
+]

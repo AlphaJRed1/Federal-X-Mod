@@ -1,0 +1,13 @@
+type: Floor
+variants: 0
+name: Carbon Water
+description: too much co2 has filled this water, making it carbonated.
+isLiquid: true
+liquidMultiplier: 1
+cacheLayer: water
+speedMultiplier: 0.5
+liquidDrop: carbonated-water
+updateEffect: generatespark
+status: wet
+statusDuration: 400
+emitLight: false

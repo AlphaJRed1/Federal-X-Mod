@@ -1,0 +1,27 @@
+name: Admix Defender
+description: A building that spawns in a defender unit. terrible name change right away
+type: DroneCenter
+health: 450
+armor: 2
+size: 2
+unitsSpawned: 1
+droneType: amalgamate
+status: none
+itemCapacity: 100
+droneConstructTime: 600
+droneRange: 100
+consumes: {
+items: {
+items: [
+bronze-admix/60
+silicon/25
+]
+}
+}
+requirements: [
+bronze-admix/25
+silicon/45
+copper/50
+]
+category: defense
+research: bronze-admix-wall

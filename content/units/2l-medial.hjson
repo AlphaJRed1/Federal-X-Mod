@@ -1,0 +1,102 @@
+type: flying
+Name: Medial
+description: Protector of the Sovereign Core. Releases missiles that spark. Unlike other protectors, Medial is built for offense. It is good for starter attacks to acccompany your units.
+controller: BuilderAI
+health: 625
+speed: 3.5
+armor: 5
+mineTier: 3
+mineSpeed: 11
+buildSpeed: 15
+itemCapacity: 150
+rotateSpeed: 5
+engineOffset: 9
+engineSize: 5
+hitSize: 12
+drag: 0.06
+accel: 0.1
+flying: true
+isCounted: false
+parts: [
+    {
+        suffix : -front
+        type : RegionPart
+         mirror: false
+         under: true
+         moveX: 0
+         moveY: 5.6
+         moveRot: 0
+         progress: warmup
+          x: 0
+          y: 0
+    }
+]
+weapons: [
+  {
+  name: medialboomgo
+  inaccuracy: 0
+   mirror: true
+  shootSound: shootBig
+baseRotation: -50
+  rotate: false
+shootWarmupSpeed: 0.06
+shoot: {
+shots: 2
+shotDelay: 5
+}
+  x: 6
+  y: 0
+  reload: 65
+  recoil: 0
+shootCone: 160
+  bullet: {
+spawnUnit: carbon-bomb
+   }
+ } 
+  {
+  name: medial-gun
+  inaccuracy: 0
+   mirror: false
+  shootSound: none
+  rotate: false
+cooldownTime: 90
+  x: 0
+  y: 0
+  continuous: true
+noAttack: true
+  recoil: 0
+bullet: {
+length: 12
+width: 19
+damage: 0
+hittable: false
+hitEffect: none
+despawnEffect: none
+}
+ } 
+]
+engines: [
+  {
+    x: -5
+    y: -6
+    rotation: -45
+    radius: 3
+  }
+  {
+    x: 5
+    y: -6
+    rotation: -135
+    radius: 3
+  }
+ ]
+abilities: [
+  {
+    type: MoveLightningAbility
+    damage: 5
+    length: 7
+    minSpeed: 0.75
+    maxSpeed: 1
+    offset: 7
+    color: bbcbd6
+  }
+]

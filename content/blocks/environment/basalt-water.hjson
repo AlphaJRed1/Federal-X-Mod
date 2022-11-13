@@ -1,0 +1,12 @@
+type: Floor
+variants: 0
+name: Basalt Water
+description: basalt underwater
+isLiquid: true
+liquidMultiplier: 0.9
+cacheLayer: water
+speedMultiplier: 0.7
+liquidDrop: water
+status: wet
+statusDuration: 200
+emitLight: false

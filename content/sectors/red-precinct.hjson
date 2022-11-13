@@ -1,0 +1,15 @@
+planet: sangroid
+sector: 35
+difficulty: 3
+description: Impact site. An asteroid crashed here, bringing mechs to the wild life of Sangroid. A fierce war started against mechs and living, and this is where the Sharded came from.
+addStartingItems: true
+      captureWave: 20
+research: {
+parent: venthyst-fields
+objectives: [
+    {
+      type: SectorComplete
+      preset: venthyst-fields
+    }
+  ]
+}

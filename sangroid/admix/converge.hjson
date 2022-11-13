@@ -1,0 +1,46 @@
+type: ItemTurret
+Name: Converge
+description: The anti-air. Fires flak bullets in bursts.
+size: 3
+range: 200
+health: 1000
+targetGround: false
+targetAir: true
+reload: 145
+    drawer: {
+type: DrawTurret
+basePrefix: admix-
+}
+shoot: {
+shots: 20
+shotDelay: 4
+}
+inaccuracy: 4
+xRand: 5
+shootY: 5.6
+velocityRnd: 0.3
+ammoTypes: {
+  bronze-admix: {
+    damage: 5
+   splashDamage: 30
+height: 18
+   width: 10
+    splashDamage: 15
+  ammoMultiplier: 3
+   hitEffect: flakExplosion
+   despawnEffect: flakExplosion
+    speed: 10
+collidesGround: false
+    lifetime: 25
+    ammoMultiplier: 6
+    shootEffect: pulverizeSmall
+    smokeEffect: conveyorPoof
+  }
+}
+requirements: [
+  copper/100
+bronze-admix/25
+silicon/10
+]
+category: turret
+research: dyad

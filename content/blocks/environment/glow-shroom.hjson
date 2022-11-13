@@ -1,0 +1,10 @@
+Type: Prop
+name: Glow Shroom
+description: glows.
+size: 1
+emitLight: true
+lightRadius: 70
+lightColor: ffeeba
+brightness: 3
+radius: 70
+variants: 1

@@ -1,0 +1,40 @@
+type: naval
+Name: Deep
+description: Fires rapid bullets.
+health: 480
+armor: 2
+speed: 1.5
+lightRadius: 100
+rotateSpeed: 2
+hitSize: 10
+lightColor: a488eb
+rotateShooting: false
+weapons: [
+  {
+  name: deep-weapon
+  inaccuracy: 2
+  shootSound: shoot
+  rotate: true
+  rotateSpeed: 5
+  shots: 2
+  spacing: 0
+  x: 4
+   shoot: {
+shots: 2
+shotDelay: 3
+}
+  y: 2
+  reload: 10
+  recoil: 1.2
+  bullet: {
+    type: standardCopper
+    damage: 13
+   height: 11
+    width: 8
+    lifetime: 20
+    speed: 6
+   }
+ } 
+]
+
+

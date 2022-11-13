@@ -1,0 +1,39 @@
+type: mech
+Name: Dome
+description: Upgraded version of the dagger. Fires artilliery bullets.
+speed: 0.5
+health: 220
+armor: 2
+canBoost: false
+hitSize: 9
+lightRadius: 120
+targetAir: false
+weapons: [
+ {
+    name: dome-weapon
+    x: -5
+    y: 0
+    rotate: false
+   top: false
+    reload: 48
+    recoil: 2
+    shootSound: artillery
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 15
+      splashDamage: 17
+      splashDamageRadius: 10
+      collides: true
+      collidesTiles: true
+      lifetime: 50
+      speed: 4
+      width: 10
+      height: 8
+      despawnEffect: hitBulletBig
+     hitEffect: hitBulletBig
+    }
+ }
+]
+
+
+

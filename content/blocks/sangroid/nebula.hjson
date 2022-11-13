@@ -1,0 +1,150 @@
+Type: ItemTurret
+Name: Nebula
+health: 3905
+description: Fires a fragging twilight missile that heals allied structures.
+size: 4
+shootEffect: lightningShoot
+shootSound: nebula
+range: 320
+rotateSpeed: 2
+hasItems: true
+itemCapacity: 25
+reload: 235
+recoil: 4
+shootWarmupSpeed: 0.04
+minWarmup: 0.96
+ammoPerShot: 3
+cooldownTime: 250
+shots: 1
+drawer: {
+type: DrawTurret
+parts: [
+    {
+        suffix : -blade
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 5
+         moveY: 5
+         moveRot: 0
+         progress: warmup
+          x: 0
+          y: -5
+         PartMove: [
+           PartProgress: recoil
+         moveX: -1
+         moveY: -2
+         moveRot: -25
+            ]
+    }
+    {
+        suffix : -front
+        type : RegionPart
+         mirror: false
+         under: true
+         moveX: 0
+         moveY: -3
+         moveRot: 0
+         progress: recoil
+          x: 0
+          y: 0
+    }
+]
+}
+consumes: {
+  power: 10.3
+}
+ammoTypes: {
+  malachite: {
+      type: MissileBulletType
+      damage: 100
+      speed: 5
+      lifetime: 60
+      collides: true
+      collidesTiles: true
+      shake: 4
+      healPercent: 25
+      splashDamage: 280
+      splashDamageRadius: 50
+      despawnEffect: greenBomb
+   hitEffect: greenBomb
+      knockback: 3
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+ trailInterval: 4
+trailParam: 6
+trailLength: 20
+trailWidth: 4
+      weaveMag: 3
+      homingRange: 0
+      homingPower: 0
+      weaveScale: 6
+      width: 30
+      height: 30
+   spin: 3
+      status: freezing
+      statusDuration: 320
+      sprite: federal-x-mod-star
+      fragBullets: 5
+      fragBullet: {
+      type: MissileBulletType
+       damage: 50
+       speed: 5
+       lifetime: 60
+     drag: 0.083
+       shake: 2
+   spin: 2
+       healPercent: 5
+       splashDamage: 75
+       splashDamageRadius: 30
+       despawnEffect: flakExplosion
+       hitEffect: flakExplosion
+       knockback: 1.5
+       frontColor: ffffff
+       backColor: 98ffa9
+       trailColor: 98ffa9
+       lightColor: 84f591
+       weaveMag: 1
+       weaveScale: 2
+       width: 17
+       height: 17
+       status: freezing
+       statusDuration: 200
+       sprite: federal-x-mod-star
+       fragBullets: 3
+       fragBullet: {
+         damage: 5
+         speed: 4
+   drag: 0.13
+         lifetime: 30
+         healPercent: 2
+         splashDamage: 25
+         splashDamageRadius: 10
+         despawnEffect: hitLaser
+         hitEffect: hitLaser
+         frontColor: ffffff
+         backColor: 98ffa9
+         trailColor: 98ffa9
+         lightColor: 84f591
+         weaveMag: 1
+         weaveScale: 2
+         width: 10
+         height: 10
+  shrinkY: 0
+         status: freezing
+         statusDuration: 100
+          sprite: federal-x-mod-star
+       }
+    }
+}
+ }
+requirements: [
+  metaglass/475
+  obamium/250
+  plastanium/200
+  malachite/150
+]
+category: turret
+research: foreshadow

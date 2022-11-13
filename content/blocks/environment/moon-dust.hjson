@@ -1,0 +1,7 @@
+type: Floor
+name: Moon Dust
+size: 1
+walkEffect: pulverize
+description: the dust slows units down a bit.
+speedMultiplier: 0.9
+variants: 3

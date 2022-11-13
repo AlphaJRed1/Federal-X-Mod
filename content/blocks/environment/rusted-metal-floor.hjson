@@ -1,0 +1,6 @@
+type: Floor
+name: Rusted Metal Floor
+description: rusty.
+status: corroded
+statusDuration: 60
+variants: 3

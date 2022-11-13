@@ -1,0 +1,34 @@
+Name: Uranium Fission Plant
+descirption: produces power by splitting uranium atoms and heating water to produce fissions and power.
+type: ImpactReactor
+size: 4
+hasLiquids: true
+powerProduction: 216.6
+plasma1: 98fb98
+plasma2: 90ee90
+explosionDamage: 1000
+itemDuration: 210
+warmupSpeed: 0.005
+consumes: {
+  power: 7.5
+  items: {
+    items: [
+      uranium/5
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.8
+  }
+}
+requirements: [
+  surge-alloy/75
+  obamium/100
+  silicon/150
+  lead/350
+  uranium/75
+]
+category: power
+ambientSound: pulse
+ambientSoundVolume: 0.2
+research: impact-reactor

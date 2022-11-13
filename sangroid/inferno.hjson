@@ -1,0 +1,86 @@
+Name: Inferno
+type: ItemTurret
+health: 800
+description: Burns enemies at medium range.
+size: 2
+range: 100
+reload: 6
+recoil: 0
+targetGround: true
+shootSound: flame
+shootCone: 50
+targetAir: false
+smokeEffect: fireballsmoke
+ammoTypes: {
+coal: {
+    damage: 17
+hitSize: 7
+ammoMultiplier: 3
+despawnEffect: none
+pierce: true
+hitEffect: hitFlameSmall
+status: burning
+lifetime: 20
+speed: 5
+keepVelocity: false
+statusDuration: 240
+collidesAir: false
+hittable: false
+shootEffect: {
+    type: ParticleEffect
+    particles: 8
+    sizeFrom: 5
+    sizeTo: 0
+    length: 115
+    baseLength: 10
+    lifetime: 15
+    colorFrom: fff7da
+    colorTo: ffdd58
+    cone: 15
+    }
+}
+pyratite: {
+    damage: 60
+hitSize: 7
+ammoMultiplier: 6
+despawnEffect: none
+pierce: true
+hitEffect: hitFlameSmall
+status: burning
+lifetime: 20
+speed: 5
+keepVelocity: false
+statusDuration: 600
+collidesAir: false
+hittable: false
+shootEffect: {
+    type: ParticleEffect
+    particles: 9
+    sizeFrom: 6
+    sizeTo: 0
+    length: 115
+    baseLength: 10
+    lifetime: 20
+    colorFrom: fff7da
+    colorTo: ffdd58
+    cone: 15
+    }
+}
+}
+requirements: [
+  copper/135
+  graphite/100
+obamium/25
+]
+category: turret
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: scorch
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+name: Armafluid
+description: A very cold liquid that freezes when on contact with oxygen.
+temperature: 0.05
+viscosity: 0.75
+heat-capacity: 1
+effect: {
+  name: frosted
+  damage: 0.15
+  speedMultiplier: 0.5
+  healthMultiplier: 0.78
+  transitionDamage: 5
+  show: true
+  affinities: [freezing]
+  opposites: [burning, melting]
+  effectChance: 0.1
+  effect: {
+     type: ParticleEffect
+     length: 2
+     particles: 3
+     lifetime: 50
+     sizeFrom: 1
+     sizeTo: 0
+     colorFrom: a4d3fd
+     colorTo: a4d3fd
+  }
+}
+color: a4d3fd

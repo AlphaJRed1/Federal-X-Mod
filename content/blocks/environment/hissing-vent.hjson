@@ -1,0 +1,8 @@
+type: SteamVent
+name: Hissing Vent
+description: rapidly spreads smoke everywhere. the smoke slows units.
+speedMultiplier: 0.8
+variants: 2
+effect: pulverizeMedium
+effectColor: ffffff
+effectSpacing: 20

@@ -1,0 +1,16 @@
+planet: sangroid
+sector: 15
+difficulty: 2
+description: Starting sector for Sangroid.
+addStartingItems: true
+      captureWave: 15
+alwaysUnlocked: true
+research: {
+parent: express-drill
+objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

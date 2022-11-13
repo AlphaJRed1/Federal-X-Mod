@@ -1,0 +1,64 @@
+type: missile
+controller: MissileAI
+flying: true
+speed: 10
+hitSize: 9
+maxRange: 6
+lifetime: 100
+hidden: true
+engineSize: 5
+engineOffset: 6
+rotateSpeed: 2
+missileAccelTime: 100
+rotateSpeed: 2
+lowAltitude: true
+ trailLength: 10
+fogRadius: 6
+health: 55
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+weapons: [
+    {
+        shootCone: 360
+          mirror: false
+          reload: 180
+          shootOnDeath: true
+          shootEffect: none
+          x: 0
+          y: 0
+          despawnHit: true
+          bullet:{
+        type: BombBulletType
+    knockback: 6
+        splashDamageRadius: 30
+        splashDamage: 120
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+       despawnEffect: massiveExplosion
+  hitEffect: massiveExplosion
+    fragBullets: 4
+fragRandomSpread: 0
+fragSpread: 15
+    fragBullet: {
+spawnUnit: elm-bomb-mini
+  }
+        }
+    }
+]
+abilities: [
+{
+type: MoveEffectAbility
+effect: formsmoke
+rotation: 180
+y: -5
+color: 7c7c7c
+interval: 6
+
+}
+]

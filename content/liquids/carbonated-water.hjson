@@ -1,0 +1,6 @@
+name: Carbonated Water
+description: Water with high carbon levels.
+temperature: 0.6
+viscosity: 0.45
+effect: wet
+color: bbcbd6

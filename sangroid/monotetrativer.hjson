@@ -1,0 +1,38 @@
+type: Reconstructor
+Name: Monotetrativer
+description: upgrades tier 4 federal-x units to their 5th tier.
+size: 9
+constructTime: 8490
+consumes: {
+  power: 9
+    items: {
+      items: [
+        uranium/270
+        obamium/650
+        carbonic-alloy/75
+        silicon/1500
+      ]
+    }
+  liquid: {
+    liquid: armafluid
+   amount: 0.8
+  }
+}
+upgrades: [
+  [1n-gazelle,1o-supernova]
+  [1s-twilight,1t-firework]
+  [1d-slash,1e-detonator]
+  [1i-eidolon, 1j-phantasm]
+  [2c-tonga, 2d-mariana]
+  [2h-essence, 2i-archetype]
+]
+requirements: [
+  uranium/250
+  obamium/1500
+  lead/3500
+carbonic-alloy/150
+  malachite/175
+]
+category: units
+research: monorenovater
+

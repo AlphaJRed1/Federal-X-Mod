@@ -1,0 +1,61 @@
+type: ConsumeGenerator
+name: Vapor Pressurizer
+description: Pressurizes carbonated water and pyratite to create power.
+liquidCapacity: 50
+size: 4
+hasPower: true
+hasLiquids: true
+hasItems: true
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: carbonated-water
+}
+{
+type: DrawBubbles
+color: dcdde5
+spread: 5
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 6
+}
+{
+type: DrawDefault
+}
+{
+type: DrawWarmupRegion
+}
+{
+type: DrawArcSmelt
+}
+]
+}
+updateEffect: pulverizeMedium
+powerProduction: 166.6
+consumes: {
+  items: {
+    items: [
+      pyratite/2
+    ]
+  }
+  liquid: {
+    liquid: carbonated-water
+    amount: 0.2
+  }
+}
+requirements: [
+silicon/200
+thorium/100
+obamium/80
+plastanium/50
+]
+category: power
+research: alloy-refluxer

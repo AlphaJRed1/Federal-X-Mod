@@ -1,0 +1,47 @@
+type: legs
+controller: MissileAI
+legs: 4
+speed: 3
+hitSize: 10
+maxRange: 10
+lifetime: 100
+hidden: true
+engineSize: 0
+rotateSpeed: 0
+missileAccelTime: 0
+rotateSpeed: 1.5
+lowAltitude: true
+fogRadius: 6
+health: 35
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+weapons: [
+    {
+        shootCone: 360
+          mirror: false
+          reload: 180
+          shootOnDeath: true
+          shootEffect: none
+          x: 0
+          y: 0
+          despawnHit: true
+          despawnEffect: none
+          bullet:{
+        type: BombBulletType
+    status: acidified
+   statusDuration: 90
+    knockback: 1
+        splashDamageRadius: 30
+     pierce: true
+        splashDamage: 45
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+        }
+    }
+]

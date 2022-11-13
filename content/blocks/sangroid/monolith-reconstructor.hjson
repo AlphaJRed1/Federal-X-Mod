@@ -1,0 +1,31 @@
+type: Reconstructor
+Name: Monolith Reconstructor
+description: upgrades tier 1 units to their monolith version.
+size: 3
+constructTime: 1000
+consumes: {
+  power: 1.9
+    items: {
+      items: [
+      graphite/25
+        obamium/20
+      ]
+    }
+}
+upgrades: [
+  [dagger, 1a-dome]
+  [crawler, 1k-sapper]
+  [flare, 1p-sparkle]
+  [risso, 1z-deep]
+  [nova, 1f-shade]
+  [mono, 1u-regen]
+  [retusa, 2e-paragon]
+]
+requirements: [
+  copper/80
+  silicon/55
+  obamium/40
+]
+category: units
+research: additive-reconstructor
+

@@ -1,0 +1,136 @@
+Name: Stygian
+description: Increased version of Tenebrous. Fires moving rails and a deadly fragmenting bomb.
+type: flying
+flying: true
+health: 1650
+armor: 6
+speed: 1.6
+rotateSpeed: 5
+drag: 0.06
+accel: 0.1
+hitSize: 20
+engineOffset: 5
+engineSize: 8
+circleTarget: true
+rotateShooting: false
+faceTarget: false
+weapons: [
+ {
+    name: stygian-gun
+    x: 12.8
+    y: 7.6
+    rotate: true
+    rotateSpeed: 2.5
+    reload: 15
+   alternate: true
+   top: false
+    recoil: 2.5
+    bullet: {
+damage: 0
+lifetime: 80
+pierce: true
+pierceBuilding: true
+speed: 2
+width: 0
+length: 0
+bulletInterval: 10
+intervalBullets: 1
+intervalSpread: 0
+    recoil: 0.5
+intervalAngle: 0
+ intervalRandomSpread: 0
+intervalBullet: {
+    type: RailBulletType
+lineEffect: railTrail
+    damage: 75
+   pierce: false
+    length: 30
+    width: 5
+    height: 6
+    lifetime: 10
+}
+    }
+  }
+  {
+  name: bomb
+  shootCone: 360
+  ignoreRotation: true
+  minShootVelocity: 1.0
+  mirror: false
+  spacing: 0
+  x: 0
+  y: 0
+  shootY: -5
+  reload: 185
+  recoil: 0
+  shootSound: null
+  bullet: {
+      maxRange: 100
+  recoil: -1.5
+      type: BombBulletType
+      damage: 75
+      splashDamage: 60
+      splashDamageRadius: 35
+      lifetime: 60
+      width: 19
+      height: 19
+ hitEffect: flakExplosionBig
+ despawnEffect: flakExplosionBig
+fragBullets: 10
+fragRandomSpread: 360
+fragSpread: 18
+fragVelocityMin: 0.8
+fragBullet: {
+      damage: 25
+      splashDamage: 25
+      splashDamageRadius: 15
+      lifetime: 10
+    speed: 5
+      width: 13
+      height: 13
+ hitEffect: flakExplosion
+ despawnEffect: flakExplosion
+fragBullets: 3
+fragRandomSpread: 360
+fragVelocityMin: 0.8
+fragBullet: {
+      damage: 10
+      splashDamage: 20
+      splashDamageRadius: 10
+      lifetime: 5
+    speed: 4
+      width: 10
+      height: 10
+ hitEffect: flakExplosion
+ despawnEffect: flakExplosion
+}
+}
+   }
+  }
+]
+engines: [
+  {
+    x: -10
+    y: -8
+    rotation: -135
+    radius: 4
+  }
+  {
+    x: 10
+    y: -8
+    rotation: -45
+    radius: 4
+  }
+  {
+    x: -17
+    y: -4.5
+    rotation: -135
+    radius: 3
+  }
+  {
+    x: 17
+    y: -4.5
+    rotation: -45
+    radius: 3
+  }
+ ]

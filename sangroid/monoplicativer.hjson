@@ -1,0 +1,37 @@
+type: Reconstructor
+Name: Monoplicativer
+description: upgrades tier 2 federal-x units to their 3rd tier.
+size: 5
+constructTime: 3995
+consumes: {
+  power: 3.15
+    items: {
+      items: [
+        lead/150
+        silicon/200
+        mitaton/15
+      ]
+    }
+  liquid: {
+    liquid: water
+    amount: 0.55
+  }
+}
+upgrades: [
+  [1l-turbo, 1m-electron]
+  [1q-confetti, 1r-meteor]
+  [2a-kermadec, 2b-kuril]
+  [1b-bracker, 1c-bastove]
+  [1g-specter, 1h-mirage]
+  [1v-aegis, 1w-parry]
+  [2f-epitome, 2g-paradigm]
+]
+requirements: [
+  copper/500
+  silicon/150
+  thorium/75
+  mitaton/30
+]
+category: units
+research: monograder
+

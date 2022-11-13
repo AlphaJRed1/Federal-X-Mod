@@ -1,0 +1,60 @@
+type: GenericCrafter
+name: Armafluid Mixer
+description: Combines the essence of obamium and titanium with water to create armafluid.
+liquidCapacity: 50
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 40
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+}
+{
+type: DrawLiquidTile
+drawLiquid: armafluid
+}
+{
+type: DrawDefault
+}
+]
+}
+consumes: {
+  power: 0.8
+  items: {
+    items: [
+      obamium/1
+      titanium/2
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+}
+requirements: [
+lead/45
+  titanium/35
+  metaglass/25
+]
+category: crafting
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: cryofluid-mixer
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}
+outputLiquid: armafluid/0.25

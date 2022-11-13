@@ -1,0 +1,75 @@
+type: ItemTurret
+Name: Continuity
+description: Shoots a ray of highly radioactive light at enemies.
+size: 4
+health: 4255
+range: 325
+targetGround: true
+targetAir: true
+shots: 1
+spread: 0
+heatColor: ffffff
+ammoPerShot: 3
+shootSound: bigshot
+reload: 80
+recoil: 4
+recoilTime: 180
+cooldownTime: 300
+alternate: false
+ammoTypes: {
+  phase-fabric: {
+    pierceBuilding: true
+    damage: 705
+    knockback: 4
+    speed: 10
+    pierce: true
+    lifetime: 32.5
+    ammoMultiplier: 3
+    sprite: federal-x-mod-shard
+    height: 45
+    width: 35
+    shootEffect: shootBig
+    smokeEffect: {
+    type: multiEffect
+    lifetime: 100
+    effects: [
+        {
+    type: ParticleEffect
+    particles: 5
+    sizeFrom: 10
+    sizeTo: 0
+    length: 75
+    baseLength: 0
+    lifetime: 30
+    colorFrom: fff7da
+    colorTo: ffdd58
+    cone: 15
+    }
+        {
+    type: ParticleEffect
+    particles: 6
+    sizeFrom: 10
+    sizeTo: 0
+    length: 100
+    baseLength: 0
+    lifetime: 100
+    colorFrom: ff0000
+    colorMid: fbff00
+    colorTo: 00d2ff
+    cone: 20
+    }
+    ]
+    }
+    hitEffect: none
+    despawnEffect: none
+    shrinkX: 1.07
+    shrinkY: 0
+  }
+}
+requirements: [
+phase-fabric/250
+malachite/450
+silicon/245
+]
+category: turret
+research: nebula

@@ -1,0 +1,140 @@
+type: mech
+Name: Hatch
+description: Support Guardian. Fires missiles, artilliery, and a giant laser.
+speed: 0.4
+health: 14200
+armor: 15
+canBoost: true
+boostMultiplier: 1.6
+itemCapacity: 120
+lightRadius: 240
+hitSize: 30
+buildSpeed: 1
+lightColor: 84f591
+immunities: [electrified]
+weapons: [
+ {
+    name: heal-gun
+    x: 19
+    y: 7
+    rotate: true
+    recoil: 1
+top: true
+    reload: 12
+    shootSound: lasershoot
+    bullet: {
+      type: MissileBulletType
+      damage: 15
+      speed: 5
+      lifetime: 40
+      collidesTeam: true
+      healPercent: 1
+      splashDamage: 20
+      splashDamageRadius: 20
+      despawnEffect: hitLaser
+      smokeEffect: hitLaser
+      homingPower: 0.3
+      homingRange: 100
+      hitEffect: none
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 4
+      weaveScale: 8
+    }
+ }
+ {
+    name: heal-artilliery
+    x: 7
+    y: -5
+    rotate: true
+    rotateSpeed: 2
+    reload: 65
+top: true
+    recoil: 2.2
+    shootSound: artillery
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 35
+      speed: 4
+      lifetime: 50
+      collidesTeam: true
+      healPercent: 9
+      splashDamage: 60
+      splashDamageRadius: 30
+      despawnEffect: {
+      type: WaveEffect
+      lifetime: 15
+      sizeFrom: 0
+      sizeTo: 30
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: 98ffa9
+      colorTo: ffffff
+        }
+      hitEffect: {
+      type: WaveEffect
+      lifetime: 15
+      sizeFrom: 0
+      sizeTo: 30
+      strokeFrom: 4
+      strokeTo: 0
+      colorFrom: 98ffa9
+      colorTo: ffffff
+        }
+      smokeEffect: hitLaser
+      width: 18
+      height: 18
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+    }
+  }
+  {
+    name: hatchlaser
+    x: 0
+    y: 0
+    rotate: false
+    reload: 210
+    recoil: 0
+    continuous: true
+    shootSound: beam
+    shootY: 13
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 17
+      length: 150
+      lifetime: 200
+      drawSize: 150
+      width: 5
+      colors: [84f59140, 84f591, ffffff]
+      lightColor: 84f591
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 6
+        lifetime: 15
+        length: 10
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: 84f59140
+        colorTo: 84f591
+      }
+    }
+  }
+]
+abilities: [
+  {
+    type: RepairFieldAbility
+    amount: 300
+    reload: 200
+    range: 100
+  }
+]
+
+
+

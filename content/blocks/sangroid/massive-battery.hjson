@@ -1,0 +1,22 @@
+Type: Battery
+Name: Massive Battery
+description: Stores a lot of power. Better than Large Battery.
+size: 4
+heatlh: 700
+solid: true
+emptyLightColor: f8c266
+fullLightColor: fb9567
+powerCapacity: 33
+outputsPower: true
+consumesPower: true
+consumes: {
+  powerBuffered: 250000
+}
+requirements: [
+  lead/105
+  titanium/75
+  silicon/50
+  obamium/25
+]
+research: stratera-drill
+category: power

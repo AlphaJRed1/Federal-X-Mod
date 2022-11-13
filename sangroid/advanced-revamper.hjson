@@ -1,0 +1,38 @@
+type: Reconstructor
+Name: Advanced Revamper
+description: upgrades advanced units to the next and final tier.
+size: 6
+constructTime: 2525
+drawer: {
+type: DrawGlowRegion
+}
+consumes: {
+  power: 3
+    items: {
+      items: [
+ mitaton/20
+silicon/75
+graphite/35
+      ]
+    }
+  liquid: {
+    liquid: armafluid
+    amount: 0.3
+  }
+}
+upgrades: [
+  [razor, blade]
+  [tenebrous, stygian]
+  [strike, blitz]
+  [acacia, elm]
+  [isle, atoll]
+]
+requirements: [
+mitaton/30
+thorium/100
+graphite/35
+metaglass/25
+]
+category: units
+research: advanced-ground-factory
+

@@ -1,0 +1,33 @@
+type: AttributeCrafter
+Name: Sporehouse
+description: uses the power of greenhouse gases to cultivate more quickly. requires coal and water.
+health: 800
+size: 3
+hasItems: true
+reccurence: 6
+craftEffect: none
+DrawCultivator: true
+produceTime: 120
+baseEfficiency: 1
+attribute: heat
+consumes: {
+  power: 1.7
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+  items: {
+    items: [
+      coal/1
+    ]
+  }
+}  
+requirements: [
+  graphite/75
+  silicon/35
+  lead/100
+  metaglass/50
+]
+category: production
+research: cultivator
+outputItem: spore-pod/3

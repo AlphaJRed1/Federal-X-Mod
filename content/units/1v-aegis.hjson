@@ -1,0 +1,36 @@
+Name: Aegis
+description: heals units and provides cover.
+type: flying
+flying: true
+health: 745
+armor: 5
+speed: 2.2
+rotateSpeed: 2.5
+drag: 0.02
+controller: DefenderAI
+accel: 0.05
+hitSize: 15
+engineOffset: 7
+engineSize: 4.2
+lowAltitude: true
+circleTarget: false
+rotateShooting: true
+lightRadius: 130
+lightColor: 84f591
+itemCapacity: 50
+payloadCapacity: 2
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 75
+    regen: 1.5
+    max: 175
+    cooldown: 600
+  }
+  {
+    type: RepairFieldAbility
+    amount: 50
+    reload: 125
+    range: 50
+  }
+]

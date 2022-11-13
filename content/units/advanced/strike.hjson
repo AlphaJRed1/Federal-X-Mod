@@ -1,0 +1,57 @@
+Name: Strike
+description: Explodes, spreading shards and stuff.
+type: flying
+flying: true
+health: 600
+armor: 0
+speed: 8
+rotateSpeed: 60
+drag: 0.05
+accel: 0.05
+hitSize: 8
+engineOffset: 6
+engineSize: 4
+lowAltitude: true
+circleTarget: true
+rotateShooting: true
+lightRadius: 50
+lightColor: e65555
+itemCapacity: 10
+weapons: [
+  {
+  name: strike-boom
+  inaccuracy: 0
+  shootSound: bigshot
+  shots: 1
+  spacing: 0
+  x: 0
+  y: 0
+  reload: 20
+  knockback: 1
+  shootEffect: {
+      type: WaveEffect
+      lifetime: 15
+      sizeFrom: 0
+      sizeTo: 30
+      strokeFrom: 5
+      strokeTo: 0
+      colorFrom: ff8700
+      colorTo: ffc88b
+        }
+  recoil: 1
+  bullet: {
+   lifetime: 2
+   killShooter: true
+   instantDisappear: true
+   splashDamage: 80
+   splashDamageRadius: 45
+   fragBullets: 15
+   fragBullet: {
+    damage: 10
+   speed: 6
+    height: 8
+    width: 8
+   }
+  }
+ }
+]

@@ -1,0 +1,24 @@
+name: Volantic Drill
+description: Fastest drill. Needs multiple loadouts to make use of this. Uses huge amounts of water.
+type: Drill
+size: 4
+tier: 8
+drawRim: true
+drillTime: 75
+rotateSpeed: 5.5
+consumes: {
+  power: 2.5
+  liquid: {
+    liquid: water 
+     amount: 0.18
+     optional: false
+  }
+}
+requirements: [
+  lead/200
+  malachite/25
+  silicon/50
+  mitaton/10
+]
+category: production
+research: stratera-drill

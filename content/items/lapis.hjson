@@ -1,0 +1,6 @@
+type: material
+name: Lapis
+description: Also known as azure copper, the main resource of the azure. mostly found on ocean grounds and close to shores.
+hardness: 9
+cost: 2
+color: a987ff

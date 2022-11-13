@@ -1,0 +1,65 @@
+Name: Semi-Guardian Factory
+description: Creates semi-guardians. a semi-guardian is a strong unit that can be created using this factory only.
+type: UnitFactory
+health: 6700
+size: 7
+consumes: {
+  power: 15.6
+}
+plans: [
+  {
+    unit: hatch
+    time: 7400
+    requirements: [
+      silicon/200
+      graphite/100
+      titanium/200
+      malachite/125
+    ]
+  }
+  {
+    unit: fract
+    time: 7250
+    requirements: [
+      silicon/200
+    lead/200  
+  phase-fabric/145
+metaglass/75
+    ]
+  }
+  {
+    unit: state
+    time: 7400
+    requirements: [
+      silicon/250  
+      titanium/225 
+     venthyst/160
+    ]
+  }
+  {
+    unit: colony
+    time: 7650
+    requirements: [
+      silicon/200
+      uranium/165
+     bronze-admix/245
+    ]
+  }
+  {
+    unit: nightshade
+    time: 8165
+    requirements: [
+      silicon/225
+      obamium/125
+      mitaton/105
+      metaglass/175
+    ]
+  }
+]
+requirements: [
+  graphite/245
+  obamium/500
+  silicon/600
+]
+research: tetrative-reconstructor
+category: units

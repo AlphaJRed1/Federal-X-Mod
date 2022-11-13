@@ -1,0 +1,116 @@
+type: naval
+Name: Mariana
+description: Shoots giant lasers and artilliery bombs that frag on impact.
+health: 25300
+speed: 0.7
+armor: 18
+lightRadius: 300
+hitSize: 70
+rotateSpeed: 1.5
+rotateShooting: false
+lightColor: a488eb
+weapons: [
+ {
+    name: mariana-laser
+    y: 4
+    x: -13
+    rotate: true
+    rotateSpeed: 1.5
+    recoil: 5
+    reload: 200
+    alternate: false
+    continuous: true
+    shootSound: beam
+cooldownTime: 150
+    shootY: 8
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 36
+      length: 180
+      lifetime: 150
+      drawSize: 150
+      width: 6
+      colors: [d06b53, ff8a35, ffa665]
+      lightColor: ffa665
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 6
+        lifetime: 16
+        length: 10
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 5
+        lenTo: 0
+        colorFrom: d06b53
+        colorTo: ff8a35
+      }
+    }
+    }
+ {
+    name: kuril-bomb
+    x: 0
+    y: -25
+    rotate: true
+    mirror: false
+    rotateSpeed: 2
+    reload: 60
+    inaccuracy: 10
+    shots: 4
+   shoot: {
+shots: 4
+shotDelay: 0
+}
+velocityRnd: 0.2
+    recoil: 2.5
+    shootSound: artillery
+    shake: 2
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 50
+      splashDamage: 50
+      splashDamageRadius: 50
+      collides: true
+      collidesTiles: true
+      lifetime: 90
+      speed: 4.5
+      width: 20
+      height: 20
+      hitShake: 2
+      despawnEffect: flakExplosionBig
+      hitEffect: flakExplosionBig
+      shootEffect: shootBig
+      smokeEffect: shootBigSmoke2
+    fragBullets: 5
+    fragBullet: {
+    speed: 7
+    lifetime: 12
+    damage: 25
+    height: 15
+      splashDamage: 20
+      splashDamageRadius: 15
+    width: 10
+      despawnEffect: flakExplosion
+      hitEffect: flakExplosion
+    pierce: true
+    }
+    }
+ }
+]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnX: 15
+    spawnY: -21
+    unit: 1p-sparkle
+    spawnTime: 900
+  }
+  {
+    type: UnitSpawnAbility
+    spawnX: -15
+    spawnY: -21
+    unit: 1p-sparkle
+    spawnTime: 900
+  }
+]
+

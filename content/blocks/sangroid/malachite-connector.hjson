@@ -1,0 +1,19 @@
+Type: PowerNode
+Name: Malachite Connector
+description: Well armored. Long range. Lots of connections. illuminates the surronding area.
+size: 2
+laserRange: 15
+health: 360
+maxNodes: 20
+laserColor1: ffffff
+laserColor2: 98ffa9
+lightRadius: 60
+brightness: 10
+radius: 200
+requirements: [
+  malachite/1
+  metaglass/3
+  silicon/5
+]
+category: power
+research: malachite-mixer

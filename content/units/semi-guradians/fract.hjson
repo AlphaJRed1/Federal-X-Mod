@@ -1,0 +1,134 @@
+Name: Fract
+description: Fires bullets that fragment into 2 smaller ones with higher impact rate. Has the ability to recreate itself. dangerous threat.
+type: flying
+flying: true
+health: 4500
+armor: 45
+speed: 2
+rotateSpeed: 1
+drag: 0.02
+accel: 0.04
+hitSize: 20
+engineOffset: 15
+engineSize: 10
+lowAltitude: true
+circleTarget: false
+rotateShooting: false
+lightRadius: 160
+itemCapacity: 100
+immunities: [burning]
+weapons: [
+  {
+  name: mount-gun
+  inaccuracy: 10
+  shootSound: shoot
+  rotate: true
+  rotateSpeed: 4
+shoot: {
+  shots: 2
+  shotDelay: 2
+}
+  spacing: 0
+  x: 6
+  y: 11
+   top: true
+  reload: 20
+  recoil: 2
+  bullet: {
+    damage: 24
+    width: 9
+    height: 13
+    lifetime: 30
+    speed: 5
+   fragRandomSpread: 45
+  fragBullets: 2
+  fragBullet: {
+    damage: 30
+    width: 6
+    height: 9
+    lifetime: 10
+    speed: 7
+ }
+   }
+  }
+  {
+  name: mount-gun
+  inaccuracy: 10
+  shootSound: shoot
+  rotate: true
+  rotateSpeed: 6
+  spacing: 0
+  x: 9
+  y: -8
+  reload: 15
+  recoil: 2
+  top: true
+  bullet: {
+    damage: 24
+    width: 9
+    height: 13
+    lifetime: 30
+    speed: 5
+   fragRandomSpread: 45
+  fragBullets: 2
+  fragBullet: {
+    damage: 30
+    width: 6
+    height: 9
+    lifetime: 10
+    speed: 7
+ }
+   }
+  }
+  {
+  name: fract-gun
+  inaccuracy: 0
+  shootSound: shoot
+  rotate: false
+  shootY: 7
+  spacing: 0
+  x: 19
+  y: 1
+  reload: 60
+  top: false
+  recoil: 3
+  bullet: {
+    damage: 45
+    splashDamage: 20
+    splashDamageRadius: 20
+despawnEffect: flakExplosion
+hitEffect: flakExplosion
+pierceArmor: true
+ height: 22
+    width: 17
+    lifetime: 23
+    speed: 10
+   fragRandomSpread: 60
+  fragBullets: 3
+  fragBullet: {
+pierce: true
+pierceBuilding: true
+    damage: 15
+    splashDamage: 50
+    splashDamageRadius: 12
+pierceArmor: true
+ height: 15
+despawnEffect: flakExplosionBig
+hitEffect: flakExplosionBig
+    width: 10
+    lifetime: 20
+    speed: 6
+ }
+   }
+  }
+]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnX: 0
+    spawnY: -20
+    unit: fract
+    spawnTime: 3950
+  }
+]
+

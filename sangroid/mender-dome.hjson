@@ -1,0 +1,26 @@
+name: Mender Dome
+description: Heals structures in high amounts but at a slow pace. Needs phase fabric.
+type: MendProjector
+health: 1200
+size: 3
+color: 84f491
+reload: 250
+range: 150
+healPercent: 30
+useTime: 500
+consumes: {
+  power: 4.5
+  items: {
+    items: [
+      phase-fabric/2
+    ]
+  }
+}
+requirements: [
+  copper/100
+  thorium/60
+  phase-fabric/15
+  venthyst/20
+]
+category: effect
+research: mend-projector

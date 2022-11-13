@@ -1,0 +1,14 @@
+name: Shielded Router
+description: shielded boi.
+type: Router
+health: 220
+speed: 13
+size: 1
+requirements: [
+  copper/10
+  thorium/2
+  plastanium/1
+  lead/4
+]
+category: distribution
+research: titanium-router

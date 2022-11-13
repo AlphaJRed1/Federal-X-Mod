@@ -1,0 +1,57 @@
+Name: Sparkle
+description: Fires bullets and lasers.
+type: flying
+flying: true
+health: 170
+armor: 1
+speed: 2
+rotateSpeed: 5
+drag: 0.06
+accel: 0.1
+hitSize: 10
+engineOffset: 5.4
+engineSize: 3
+lowAltitude: true
+circleTarget: false
+rotateShooting: true
+lightRadius: 100
+itemCapacity: 25
+weapons: [
+  {
+  name: spark1
+  inaccuracy: 0
+  shootSound: shoot
+  shots: 1
+  spacing: 0
+  x: 3
+  y: 5
+  reload: 20
+  bullet: {
+    damage: 12
+    length: 14
+    width: 10
+    lifetime: 25
+    speed: 4
+   }
+  }
+  {
+  name: sparkl2
+    mirror: false
+    x: 0
+    y: 5
+    reload: 70
+    recoil: 0
+    shootY: 0
+    shootSound: laser
+    shake: 0
+    bullet: {
+      type: LaserBulletType
+      damage: 18
+      collidesTeam: false
+      length: 60
+   width: 2
+      colors: [e1a037, ffdfab, ffffff]
+      lightColor: ffdfab66
+   }
+  }
+]

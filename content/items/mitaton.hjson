@@ -1,0 +1,6 @@
+type: material
+name: Mitaton
+description: A very hard and strong resource. Used for making strong turrets and ammo.
+hardness: 5
+cost: 4
+color: fdb80a

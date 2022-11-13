@@ -1,0 +1,118 @@
+Name: Hurricane
+description: Ultimate liquid sprouter. Fires multiple liquid orbs at enemies.
+type: LiquidTurret
+health: 4750
+targetAir: true
+rotateSpeed: 4
+targetGround: true
+recoilTime: 6
+size: 4
+range: 285
+reload: 5
+shootCone: 35
+shootEffect: shootLiquid
+consumes: {
+  power: 6.5
+}
+recoil: 2
+drawer: {
+type: DrawTurret
+parts: [
+    {
+        suffix : -blade
+        type : RegionPart
+         mirror: true
+         under: false
+         moveX: 1
+         moveY: -2
+         moveRot: -5
+         progress: recoil
+          x: 2
+          y: 0
+    }
+]
+}
+   shoot: {
+shots: 3
+shotDelay: 2
+}
+inaccuracy: 25
+ammoTypes: {
+  water: {
+    type: liquidBulletType
+    liquid: water
+    lifetime: 47.5
+    speed: 6
+    knockback: 5
+    puddleSize: 16
+    orbSize: 6
+    drag: 0.002
+    ammoMultiplier: 4
+    statusDuration: 12
+    damage: 3
+  }
+  slag: {
+    type: liquidBulletType
+    liquid: slag
+    lifetime: 47.5
+    speed: 6
+    knockback: 2.5
+    puddleSize: 16
+    orbSize: 6
+    damage: 10
+    drag: 0.002
+    ammoMultiplier: 4
+    statusDuration: 120
+    status: melting
+  }
+  oil: {
+    type: liquidBulletType
+    liquid: oil
+    lifetime: 47.5
+    speed: 6
+    knockback: 1.5
+    orbSize: 6
+    puddleSize: 16
+    drag: 0.002
+    ammoMultiplier: 4
+    statusDuration: 120
+    damage: 5
+    status: tarred
+  }
+  cryofluid: {
+    type: liquidBulletType
+    liquid: cryofluid
+    lifetime: 47.5
+    speed: 6
+    knockback: 2.5
+    puddleSize: 16
+    orbSize: 6
+    drag: 0.002
+    ammoMultiplier: 4
+    statusDuration: 120
+    damage: 6
+    status: freezing
+  }
+  armafluid: {
+    type: LiquidBulletType
+    liquid: armafluid
+    lifetime: 47.5
+    speed: 6
+    knockback: 10
+    puddleSize: 17
+    orbSize: 7
+    damage: 10
+    drag: 0.002
+    ammoMultiplier: 4
+    statusDuration: 180
+    status: frosted
+  }
+}
+category: turret
+research: tsunami
+requirements: [
+  lead/1000
+  obamium/275
+  thorium/100
+  metaglass/125
+]

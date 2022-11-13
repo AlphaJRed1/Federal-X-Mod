@@ -1,0 +1,60 @@
+type: GenericCrafter
+name: Carbon Annexer
+description: Mixes carbon from lead and water to make carbonated water.
+liquidCapacity: 50
+size: 3
+hasPower: true
+hasLiquids: true
+craftTime: 75
+updateEffect: generatespark
+craftEffect: pulverizeMedium
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: carbonated-water
+}
+{
+type: DrawBubbles
+color: dcdde5
+spread: 3
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 3.5
+}
+{
+type: DrawDefault
+}
+{
+type: DrawLiquidRegion
+drawLiquid: water
+}
+]
+}
+consumes: {
+  power: 2.08
+  items: {
+    items: [
+      lead/1
+    ]
+  }
+  liquid: {
+    liquid: water
+    amount: 0.3
+  }
+}
+requirements: [
+copper/75
+graphite/55
+malachite/25
+]
+category: crafting
+research: water-extricator
+outputLiquid: carbonated-water/0.15

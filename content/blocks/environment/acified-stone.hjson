@@ -1,0 +1,28 @@
+type: Floor
+name: Acified Stone
+description: uranium essence has infected rocks turning them to deadly hostile floor plates.
+variants: 3
+    status: {
+       name: acidified
+       speedMultiplier: 0.65
+       reloadMultiplier: 0.75
+       show: true
+       damage: 0.33
+   color: ccdbb5
+       transitionDamage: 35
+       affinities: [burning, melting]
+       effectChance: 0.05
+       effect: {
+    type: ParticleEffect
+    particles: 4
+    sizeFrom: 3
+    sizeTo: 0
+    length: 20
+    baseLength: 5
+    lifetime: 60
+    colorFrom: ccdbb5
+    colorTo: b3c09f
+    cone: 360
+    }
+    }
+statusDuration: 30

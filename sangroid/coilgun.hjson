@@ -1,0 +1,135 @@
+type: ItemTurret
+Name: Coilgun
+description: rapidly fires multiple bullets at enemies.
+size: 3
+health: 1000
+range: 170
+targetGround: true
+targetAir: true
+shots: 1
+reload: 8
+alternate: false
+ammoTypes: {
+  copper: {
+    damage: 11
+    speed: 7
+    lifetime: 25
+    ammoMultiplier: 2
+   splashDamage: 5
+  splashDamageRadius: 10
+    height: 11
+    width: 9
+  }
+  graphite: {
+    damage: 22
+    speed: 7
+    lifetime: 25
+    ammoMultiplier: 3
+   splashDamage: 10
+  splashDamageRadius: 10
+    height: 15
+    width: 12
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    reloadMultiplier: 0.75
+  }
+  pyratite: {
+    damage: 18
+    speed: 7
+    lifetime: 25
+    ammoMultiplier: 3
+    height: 13
+    width: 10
+   splashDamage: 9
+  splashDamageRadius: 12
+    status: burning
+    statusDuration: 160
+  }
+  silicon: {
+    damage: 16
+    speed: 7
+    lifetime: 25
+    ammoMultiplier: 3
+    height: 12
+    width: 10
+    homingPower: 0.5
+   splashDamage: 7
+  splashDamageRadius: 15
+   homingRange: 70
+    reloadMultiplier: 1.1
+  }
+  thorium: {
+    damage: 29
+    speed: 7
+    lifetime: 25
+    ammoMultiplier: 3
+    height: 16
+    width: 12
+   splashDamage: 10
+  splashDamageRadius: 8
+    pierceCap: 2
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    reloadMultiplier: 1.2
+  }
+  metaglass: {
+    damage: 16
+   splashDamage: 10
+  splashDamageRadius: 15
+    ammoMultiplier: 3
+    speed: 7
+    lifetime: 25
+    height: 12
+    width: 10
+    fragBullets: 2
+  fragRandomSpread: 45
+  fragLifeMin: 0.5
+    fragBullet: {
+    speed: 6
+    damage: 7
+    lifetime: 10
+    }
+  }
+  plastanium: {
+    damage: 25
+   splashDamage: 15
+  splashDamageRadius: 17
+    ammoMultiplier: 4
+    speed: 7
+    lifetime: 25
+    height: 15
+    width: 12
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    fragBullets: 3
+  fragRandomSpread: 60
+  fragLifeMin: 0.7
+    fragBullet: {
+    speed: 7
+    damage: 14
+    lifetime: 7
+    }
+  }
+  uranium: {
+    damage: 24
+   splashDamage: 20
+  splashDamageRadius: 10
+    speed: 7
+    ammoMultiplier: 3
+    lifetime: 25
+    height: 16
+    width: 13
+    reloadMultiplier: 0.9
+    status: acidified
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    statusDuration: 100
+  }
+}
+requirements: [
+  copper/125
+  obamium/45
+  titanium/35
+]
+category: turret
+research: salvo

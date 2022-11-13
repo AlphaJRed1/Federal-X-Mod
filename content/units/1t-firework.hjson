@@ -1,0 +1,76 @@
+Name: Firework
+description: fires an intense amount of giant bullets at enemies.
+type: flying
+flying: true
+health: 25300
+armor: 24
+speed: 0.7
+rotateSpeed: 1.5
+drag: 0.05
+accel: 0.1
+hitSize: 45
+engineOffset: 30
+engineSize: 8
+lowAltitude: true
+circleTarget: false
+rotateShooting: false
+faceTarget: false
+lightRadius: 260
+weapons: [
+  {
+  name: firework-blast
+  inaccuracy: 5
+  shootSound: shootBig
+  rotate: true
+  rotateSpeed: 3.5
+  shots: 1
+  spacing: 0
+  x: 18
+  y: 22
+shootY: 9
+  reload: 15
+  recoil: 3
+  bullet: {
+    damage: 30
+    splashDamage: 35
+    splashDamageRadius: 35
+    width: 16
+    height: 22
+    knockbak: 2
+    lifetime: 35
+    shootEffect: shootBig2
+    smokeEffect: shootBigSmoke2
+    despawnEffect: massiveExplosion
+    hitnEffect: massiveExplosion
+    speed: 7
+   }
+  }
+  {
+  name: firework-blast
+  inaccuracy: 5
+  shootSound: shootBig
+  rotate: true
+  rotateSpeed: 3.5
+  shots: 1
+  spacing: 0
+  x: 22
+  y: -7
+  reload: 10
+shootY: 9
+  recoil: 3
+  bullet: {
+    damage: 30
+    splashDamage: 35
+    splashDamageRadius: 35
+    width: 16
+    height: 22
+    knockbak: 2
+    lifetime: 35
+    shootEffect: shootBig2
+    smokeEffect: shootBigSmoke2
+    despawnEffect: massiveExplosion
+    hitnEffect: massiveExplosion
+    speed: 7
+   }
+  }
+]

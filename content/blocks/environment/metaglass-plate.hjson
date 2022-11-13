@@ -1,0 +1,8 @@
+type: Floor
+name: Metaglass Plate
+description: Lead and sand have heated up together, they melded into one.
+variants: 3
+itemDrop: metaglass
+playerUnmineable: true
+hardness: 3
+dragMultiplier: 0.01

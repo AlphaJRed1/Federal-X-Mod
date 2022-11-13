@@ -1,0 +1,46 @@
+type: GenericCrafter
+name: Infernite Cinerarium
+description: Uses incredibly heated procedures to make infernite that it uses a lot of coolant.
+liquidCapacity: 30
+health: 200
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 145
+updateEffect: generatespark
+craftEffect: pulverizeMedium
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawWarmupRegion
+}
+]
+}
+consumes: {
+  power: 2.5
+  items: {
+    items: [
+      pyratite/1
+      sand/3
+      lead/1
+      coal/2
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.1
+  }
+}
+requirements: [
+  lead/150
+  titanium/75
+  venthyst/50
+]
+category: crafting
+research: pyratite-mixer
+outputItem: infernite/3

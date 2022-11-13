@@ -1,0 +1,122 @@
+type: missile
+controller: MissileAI
+flying: true
+speed: 3
+hitSize: 9
+maxRange: 6
+lifetime: 200
+hidden: true
+engineSize: 5
+engineOffset: 5
+rotateSpeed: 1.5
+missileAccelTime: 100
+rotateSpeed: 1.6
+lowAltitude: true
+fogRadius: 9
+health: 45
+armor: 1
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+weapons: [
+    {
+        shootCone: 360
+          mirror: false
+          reload: 180
+          shootOnDeath: true
+          shootEffect: none
+          x: 0
+          y: 0
+          despawnHit: true
+          bullet:{
+        type: EmpBulletType
+    status: electrified
+   damage: 25
+radius: 45
+   statusDuration: 100
+    knockback: 2
+        splashDamageRadius: 30
+        splashDamage: 106
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+      puddles: 5
+   puddileRange: 15
+    puddleAmount: 25
+    puddleLiquid: electrified-water
+        collidesAir: true
+    despawnEffect: {
+    type: multiEffect
+    lifetime: 50
+    effects: [
+        {
+    type: ParticleEffect
+    particles: 10
+    sizeFrom: 2
+    sizeTo: 0
+    length: 70
+    baseLength: 0
+    lifetime: 50
+    colorFrom: ffffff
+    colorTo: 98ffa9
+    cone: 360
+    }
+    {
+    type: WaveEffect
+    lifetime: 15
+    rotation: 1
+    sides: 0
+    sizeFrom: 0
+    sizeTo: 20
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: ffffff
+    colorTo: 98ffa9
+          }
+      ]
+    }
+    hitEffect: {
+    type: multiEffect
+    lifetime: 50
+    effects: [
+        {
+    type: ParticleEffect
+    particles: 10
+    sizeFrom: 2
+    sizeTo: 0
+    length: 70
+    baseLength: 0
+    lifetime: 50
+    colorFrom: ffffff
+    colorTo: 98ffa9
+    cone: 45
+    }
+    {
+    type: WaveEffect
+    lifetime: 15
+    rotation: 1
+    sides: 0
+    sizeFrom: 0
+    sizeTo: 20
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: ffffff
+    colorTo: 98ffa9
+          }
+      ]
+    }
+        }
+    }
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 25
+    regen: 4
+    max: 15
+    cooldown: 15
+  }
+]

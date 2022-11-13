@@ -1,0 +1,151 @@
+Name: Railer
+health: 1100
+description: Fires long range artilliery, the friction charges electrical sparks in the process.
+type: ItemTurret
+size: 2
+range: 245
+reload: 60
+recoilAmount: 2
+targetGround: true
+targetAir: false
+shots: 1
+spread: 0
+alternate: false
+shootSound: artillery
+ammoTypes: {
+  obamium: {
+lifetime: 0
+fragVelocityMin: 1
+fragBullets: 1
+fragRandomSpread: 0
+lightning: 1
+lightningCone: 20
+lightningDamage: 9
+lightningLength: 16
+despawnEffect: none
+fragBullet: {
+    type: ArtilleryBulletType
+    damage: 35
+    speed: 3
+    lifetime: 81.6
+    splashDamage: 15
+    splashDamageRadius: 15
+    collides: true
+    collidesTiles: true
+    height: 9
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: flakExplosion
+   despawnEffect: flakExplosion
+}
+  }
+  plastanium: {
+lifetime: 0
+fragBullets: 1
+fragRandomSpread: 0
+lightning: 1
+lightningCone: 20
+lightningDamage: 10
+lightningLength: 12
+fragVelocityMin: 1
+despawnEffect: none
+fragBullet: {
+    type: ArtilleryBulletType
+    damage: 40
+    speed: 3
+    lifetime: 81.6
+    splashDamage: 21
+    splashDamageRadius: 15
+    collides: true
+    collidesTiles: true
+    height: 10
+    width: 16
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: plasticExplosion
+   despawnEffect: plasticExplosion
+    fragBullets: 5
+    fragBullet: {
+      damage: 5
+width: 15
+      speed: 4
+      lifetime: 10
+   }
+}
+  }
+  blast-compound: {
+lifetime: 0
+fragBullets: 1
+fragRandomSpread: 0
+fragVelocityMin: 1
+lightning: 1
+lightningCone: 20
+lightningDamage: 10
+lightningLength: 8
+despawnEffect: none
+fragBullet: {
+    type: ArtilleryBulletType
+    damage: 45
+    speed: 3
+    lifetime: 81.6
+    splashDamage: 37
+    splashDamageRadius: 20
+    collides: true
+    collidesTiles: true
+    height: 12
+    width: 17
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: blastExplosion
+   despawnEffect: blastExplosion
+}
+  }
+  surge-alloy: {
+lifetime: 0
+fragBullets: 1
+fragRandomSpread: 0
+lightning: 2
+lightningCone: 20
+lightningDamage: 20
+lightningLength: 17
+fragVelocityMin: 1
+despawnEffect: none
+fragBullet: {
+    type: ArtilleryBulletType
+    lightning: 2
+    lightningDamage: 15
+    lightningLength: 9
+    damage: 30
+    speed: 3
+    lifetime: 81.6
+    splashDamage: 60
+    splashDamageRadius: 16
+    collides: true
+    collidesTiles: true
+    height: 12
+    width: 17
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    hitEffect: blastExplosion
+   despawnEffect: blastExplosion
+}
+  }
+}
+requirements: [
+  copper/150
+  obamium/45
+  silicon/60
+]
+category: turret
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: salvo
+objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

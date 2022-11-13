@@ -1,0 +1,74 @@
+Name: Archipelago
+description: Created by Atolls, has a small energy field and point defense turrets.
+controller: DefenderAI
+type: flying
+flying: true
+health: 345
+armor: 2
+speed: 0.75
+rotateSpeed: 20
+drag: 0.01
+accel: 0.1
+hitSize: 12
+lowAltitude: true
+circleTarget: false
+rotateShooting: true
+lightRadius: 120
+engineOffset: 7
+engineSize: 5
+weapons: [
+{
+name: archigopop
+type: PointDefenseWeapon
+x: 0
+y: 0
+controllable: false
+rotate: true
+targetInterval: 8
+targetSwitchInterval: 8
+reload: 8
+bullet: {
+shootEffect: sparkShoot
+hitEffect: pointHit
+  maxRange: 125
+  damage: 27
+}
+}
+]
+
+abilities: [
+  {
+    type: EnergyFieldAbility
+   damage: 10
+reload: 100
+    range: 50
+y: 0
+    shootSound: lasershoot
+healPercent: 5
+maxTargets: 10
+blinkScl: 7
+blinkSize: 0.01
+statusDuration: 10
+  }
+  {
+    type: MoveEffectAbility
+   effect: hitEmpSpark
+y: 0
+x: 0
+interval: 60
+  }
+]
+engines: [
+  {
+    x: -6
+    y: 5
+    rotation: 135
+    radius: 4
+  }
+  {
+    x: 6
+    y: 5
+    rotation: 45
+    radius: 4
+   }
+ ]

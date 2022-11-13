@@ -1,0 +1,120 @@
+type: ItemTurret
+Name: Plague
+description: Fires multiple shots of high damaging bullets at enemies.
+size: 5
+health: 5400
+range: 350
+targetGround: true
+targetAir: true
+shots: 2
+reload: 8
+recoil: 4
+xRand: 6
+rotateSpeed: 4
+inaccuracy: 16
+cooldownTime: 70
+recoilTime: 30
+alternate: false
+shootWarmupSpeed: 0.06
+minWarmup: 0.96
+drawer: {
+type: DrawTurret
+parts: [
+    {
+        suffix : -blade
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 4
+         moveY: -1
+         moveRot: -50
+         progress: warmup
+          x: 5.1
+          y: -9
+    }
+]
+}
+   shoot: {
+shots: 2
+shotDelay: 2
+}
+ammoTypes: {
+  plastanium: {
+    damage: 9
+    splashDamage: 40
+    splashDamageRadius: 50
+    speed: 9
+    lifetime: 44
+    ammoMultiplier: 2
+    height: 18
+    width: 13
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    despawnEffect: plasticExplosion
+    fragBullets: 5
+    fragLifeMin: 0.3
+    fragBullet: {
+      damage: 5
+    }
+  }
+  mitaton: {
+    damage: 15
+    splashDamage: 90
+    splashDamageRadius: 65
+    speed: 9
+    lifetime: 44
+    ammoMultiplier: 5
+    height: 20
+    width: 15
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    despawnEffect: blastExplosion
+    fragBullets: 5
+    fragLifeMin: 0.3
+    fragBullet: {
+      damage: 7
+    }
+  }
+  blast-compound: {
+    damage: 7
+    splashDamage: 50
+    splashDamageRadius: 75
+    speed: 9
+    lifetime: 44
+    ammoMultiplier: 5
+    status: blasted
+    statusDuration: 100
+    height: 18
+    width: 13
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    despawnEffect: blastExplosion
+    }
+  surge-alloy: {
+    damage: 15
+    splashDamage: 85
+    splashDamageRadius: 47
+    speed: 9
+    lifetime: 44
+    ammoMultiplier: 5
+    status: shocked
+    statusDuration: 150
+    lightning: 2
+    lightningLength: 6
+    lightningDamage: 13
+    height: 19
+    width: 15
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    despawnEffect: flakExplosionBig
+    }
+}
+requirements: [
+  carbonic-alloy/105
+  graphite/300
+  silicon/325
+  plastanium/250
+  surge-alloy/145
+]
+category: turret
+research: cyclone

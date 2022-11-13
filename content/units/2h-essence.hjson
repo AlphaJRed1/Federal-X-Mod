@@ -1,0 +1,93 @@
+type: naval
+Name: Essence
+description: A support unit in a weird way. It creates slow moving missiles that take a lot of damage and leave electric puddles behind, shocking any buildings nearby. It also has healing turrets, buildings and units both.
+health: 10215
+speed: 0.57
+armor: 12
+lightRadius: 320
+rotateSpeed: 0.5
+hitSize: 25
+rotateShooting: false
+lightColor: 84f591
+weapons: [
+  {
+  name: essence-gun
+  shootSound: plasmaboom
+  rotate: true
+cooldownTime: 80
+  mirror: true
+  rotateSpeed: 3
+  spacing: 0
+  x: -10
+  y: -6
+  reload: 100
+  recoil: 3
+  bullet: {
+spawnUnit: slow-puddle-bomb
+   }
+ } 
+ {
+    name: epitome-gun
+    x: 9
+    y: 13
+    rotate: true
+    rotateSpeed: 5
+    recoil: 2
+   shoot: {
+shots: 2
+shotDelay: 5
+}
+inaccuracy: 5
+    reload: 2
+    shootSound: lasershoot
+    bullet: {
+      type: MissileBulletType
+      damage: 12
+      speed: 5
+      lifetime: 35
+      collidesTeam: true
+      healPercent: 2
+     width: 9
+     height: 9
+      despawnEffect: hitLaser
+      smokeEffect: hitLaser
+      homingPower: 0.3
+      homingRange: 100
+      hitEffect: hitLaser
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 2
+      weaveScale: 4
+    }
+ }
+  {
+  name: essence-heal
+  type: RepairBeamWeapon
+  rotate: true
+  mirror: true
+  repairSpeed: 8
+ beamWidth: 0.7
+  x: 10
+  y: -15
+  range: 60
+ } 
+]
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 80
+    regen: 2
+    max: 450
+    cooldown: 250
+  }
+{
+type: StatusFieldAbility
+effect: overdrive
+range: 100
+duration: 175
+reload: 450
+}
+]
+

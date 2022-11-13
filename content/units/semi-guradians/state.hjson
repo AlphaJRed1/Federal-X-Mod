@@ -1,0 +1,198 @@
+Name: State
+description: Fires rounds of rapid bullets at enemies, and creates Novas at an increased rate.
+type: flying
+flying: true
+health: 15500
+armor: 9
+speed: 2
+rotateSpeed: 3
+drag: 0.07
+accel: 0.25
+hitSize: 20
+engineOffset: 25
+engineSize: 7
+lowAltitude: true
+circleTarget: false
+faceTarget: false
+lightRadius: 170
+itemCapacity: 250
+immunities: [wet, electrified]
+weapons: [
+  {
+  name: heal-disperse
+  inaccuracy: 5
+  spacing: 0
+  x: 22
+  y: -6
+  rotate: true
+rotateSpeed: 2.5
+  mirror: true
+  top: true
+layerOffset: 0.1
+  reload: 10
+cooldownTime: 50
+  recoil: 2
+parts: [
+    {
+        suffix : -front
+        type : RegionPart
+         mirror: false
+         under: false
+         moveX: 0
+         moveY: -3
+         moveRot: 0
+         progress: reload
+          x: 0
+          y: 0
+    }
+]
+shoot: {
+type: ShootAlternate
+shots: 2
+spread: 5
+barrels: 2
+}
+  shootSound: lasershoot
+    bullet: {
+      damage: 55
+      speed: 6
+      lifetime: 30
+      collidesTeam: true
+      healPercent: 1.5
+      width: 7
+      height: 13
+  pierceCap: 2
+      despawnEffect: hitBulletColor
+      smokeEffect: hitLaser
+      homingPower: 0
+      hitEffect: hitBulletColor
+      frontColor: ffffff
+      backColor: 98ffa9
+      lightColor: 84f591
+bulletInterval: 2
+intervalBullets: 1
+intervalSpread: 0
+intervalAngle: 0
+ intervalRandomSpread: 0
+     intervalBullet: {
+  instantDissapear: true
+  hittable: false
+      damage: 0
+      speed: 0
+      lifetime: 0
+      collidesTeam: false
+      despawnEffect: hitLaser
+      hitEffect: hitLaser
+      frontColor: ffffff
+      backColor: 98ffa9
+      trailColor: 98ffa9
+      lightColor: 84f591
+      weaveMag: 3
+      weaveScale: 5
+}
+    }
+  }
+  {
+  name: heal-shotgun
+  top: true
+  inaccuracy: 8
+  shootSound: spark
+  rotate: true
+  rotateSpeed: 6
+shoot: {
+shots: 2
+}
+  spacing: 0
+  x: 12
+  y: -8
+  reload: 20
+  recoil: 1
+  bullet: {
+  type: LightningBulletType
+  damage: 22
+  lightningLength: 16
+    collidesTeam: true
+    healPercent: 2
+   lightningColor: 84f591
+   }
+  }
+  {
+  name: heal-shotgun
+  top: true
+  inaccuracy: 8
+  shootSound: spark
+  rotate: true
+  rotateSpeed: 6
+shoot: {
+shots: 2
+}
+  spacing: 0
+  x: 6
+  y: -16
+  reload: 14
+  recoil: 1
+  bullet: {
+  type: LightningBulletType
+  damage: 22
+  lightningLength: 16
+    collidesTeam: true
+    healPercent: 2
+   lightningColor: 84f591
+   }
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+   effect: missileTrailShort
+   teamColor: true
+y: -24
+x: 21
+interval: 4
+  }
+  {
+    type: MoveEffectAbility
+   effect: missileTrailShort
+   teamColor: true
+y: -24
+x: -21
+interval: 4
+  }
+  {
+    type: MoveEffectAbility
+   effect: missileTrailShort
+   teamColor: true
+y: -24
+x: 13
+interval: 4
+  }
+  {
+    type: MoveEffectAbility
+   effect: missileTrailShort
+   teamColor: true
+y: -24
+x: -13
+interval: 4
+  }
+  {
+    type: ForceFieldAbility
+    radius: 100
+    regen: 3
+    max: 600
+    cooldown: 900
+  }
+  {
+    type: ForceFieldAbility
+    radius: 55
+    regen: 4
+    max: 100
+    cooldown: 550
+  }
+  {
+    type: UnitSpawnAbility
+    spawnX: 0
+    spawnY: -3
+    unit: nova
+    spawnTime: 500
+  }
+]

@@ -1,0 +1,146 @@
+type: naval
+Name: Archetype
+description: Fires emp bullets at enemies, and has 3 energy fields. Also spawns in parrys and polys.
+health: 27500
+speed: 0.6
+armor: 24
+lightRadius: 310
+rotateSpeed: 0.5
+hitSize: 45
+rotateShooting: false
+lightColor: 84f591
+parts: [
+    {
+        type : HoverPart
+         mirror: false
+radius: 30
+phase: 90
+stroke: 7
+layerOffset: -0.001
+color: 84f591
+          x: 0
+          y: -39
+    }
+    {
+        type : HoverPart
+         mirror: true
+radius: 21
+phase: 90
+stroke: 5
+layerOffset: -0.001
+color: 84f591
+          x: 18
+          y: -31
+    }
+]
+weapons: [
+ {
+    name: emp-mount
+    x: 26
+    y: -30
+    rotate: true
+    rotateSpeed: 2
+   mirror: true
+    recoil: 3
+    reload: 85
+    shootSound: plasmaboom
+    bullet: {
+      type: EmpBulletType
+      damage: 140
+      speed: 3
+      lifetime: 100
+      collidesTeam: true
+      healPercent: 20
+      splashDamage: 200
+      splashDamageRadius: 125
+radius: 125
+width: 22
+height: 22
+sprite: circle-bullet
+      frontColor: ffffff
+      backColor: 98ffa9
+hitEffect: hitEmpSpark
+despawnEffect: hitEmpSpark
+    trailLength: 25
+ trailInterval: 4
+trailParam: 4
+trailWidth: 4
+    trailColor: 98ffa9
+      lightColor: 84f591
+bulletInterval: 6
+intervalBullets: 2
+intervalSpread: 90
+intervalAngle: 180
+ intervalRandomSpread: 0
+     intervalBullet: {
+      type: ShrapnelBulletType
+      damage: 54
+      length: 55
+      width: 12
+      collidesTeam: true
+      healPercent: 2
+toColor: 84f591
+      lightColor: 84f591
+      hitEffect: hitEmpSpark
+}
+    }
+ }
+]
+abilities: [
+  {
+    type: EnergyFieldAbility
+   damage: 25
+reload: 10
+    range: 100
+healPercent: 2
+blinkScl: 7
+  x: -25
+maxTargets: 2
+statusDuration: 100
+  }
+  {
+    type: EnergyFieldAbility
+   damage: 25
+reload: 10
+    range: 100
+blinkScl: 7
+healPercent: 2
+  x: 25
+maxTargets: 2
+statusDuration: 100
+  }
+  {
+    type: EnergyFieldAbility
+   damage: 375
+reload: 230
+    range: 200
+y: -30
+    shootSound: plasmaboom
+healPercent: 10
+maxTargets: 30
+statusDuration: 400
+  }
+  {
+    type: UnitSpawnAbility
+    spawnX: 0
+    spawnY: 0
+    unit: 1w-parry
+    spawnTime: 1500
+  }
+  {
+    type: UnitSpawnAbility
+    spawnX: -10
+    spawnY: -15
+    unit: poly
+    spawnTime: 1500
+  }
+  {
+    type: UnitSpawnAbility
+    spawnX: 10
+    spawnY: -15
+    unit: poly
+    spawnTime: 1500
+  }
+]
+
+

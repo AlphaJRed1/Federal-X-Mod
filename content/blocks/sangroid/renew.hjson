@@ -1,0 +1,59 @@
+type: ItemTurret
+Name: Renew
+description: Fires a piercing knockback bullet that shards on hit and stuns units for a limited time.
+size: 3
+range: 285
+health: 1200
+targetGround: true
+targetAir: true
+shots: 1
+spread: 0
+reload: 100
+recoilAmount: 2.5
+alternate: false
+ammoTypes: {
+  mitaton: {
+    damage: 70
+pierceCap: 3
+shake: 2
+pierceArmor: true
+status: unmoving
+statusDuration: 25
+knockback: 5
+    speed: 7
+    lifetime: 35
+    height: 35
+    width: 20
+    trailWidth: 5
+    trailLength: 20
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    hitEffect: flakExplosionBig
+    despawnEffect: flakExplosionBig
+fragRandomSpread: 35
+fragBullets: 2
+fragLifeMin: 0.5
+fragBullet: {
+    damage: 25
+pierceCap: 2
+pierceArmor: true
+knockback: 1
+shake: 0.6
+    speed: 7
+    lifetime: 25
+    height: 15
+    width: 10
+    trailWidth: 2
+    trailLength: 10
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
+}
+    }
+}
+requirements: [
+  obamium/105
+  thorium/40
+  silicon/50
+]
+category: turret
+research: salvo

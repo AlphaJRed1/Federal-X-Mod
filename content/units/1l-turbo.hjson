@@ -1,0 +1,64 @@
+Name: Turbo
+description: Fires artilliery and sap lasers.
+type: legs
+hitSize: 10
+hovering: true
+allowLegStep: true
+visualElevation: 0.2
+groundLayer: 75
+health: 595
+hitSize: 15
+armor: 2
+speed: 0.55
+lightRadius: 150
+weapons: [
+ {
+    name: sap-artilliery
+    x: 9.7
+    y: 0
+    rotate: false
+    reload: 60
+   top: false
+    recoil: 1.5
+    shootSound: artillery
+    bullet: {
+      type: ArtilleryBulletType
+      damage: 35
+      splashDamage: 32
+      splashDamageRadius: 15
+      collides: true
+      collidesTiles: true
+      lifetime: 36
+      speed: 5
+      width: 15
+      height: 10
+      frontColor: bf92f9
+      backColor: a488eb
+      lightColor: bf92f9
+      despawnEffect: sapExplosion
+      hitEffect: sapExplosion
+      status: sapped
+      statusDuration: 200
+    }
+ }
+ {
+    name: sapper-weapon
+    y: 5
+    x: 4
+    rotate: true
+    recoil: 1
+    reload: 10
+    shootSound: sap
+    bullet: {
+      type: SapBulletType
+      damage: 16
+      knockback: -0.4
+      length: 65
+      sapStrength: 0.4
+      color: bf92f9
+      lightColor: a488eb
+      shootEffect: shootLiquid
+      hitEffect: hitLiquid
+    }
+ }
+]

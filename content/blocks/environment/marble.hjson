@@ -1,0 +1,4 @@
+type: Floor
+name: Marble
+variants: 3
+dragMultiplier: -1.2

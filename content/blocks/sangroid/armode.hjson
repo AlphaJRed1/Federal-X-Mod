@@ -1,0 +1,51 @@
+Name: Armode
+description: fires weak homing missiles at enemies.
+type: ItemTurret
+health: 400
+size: 1
+rotateSpeed: 5
+reload: 25
+shootSound: missile
+recoilAmount: 1
+range: 135
+ammoTypes: {
+  pyratite: {
+    type: MissileBulletType
+    damage: 12
+    lifetime: 35
+    splashDamage: 30
+    ammoMultiplier: 5
+    splashDamageRadius: 25
+    width: 7
+    speed: 5
+    height: 7
+    frontColor: ffaf44
+    backColor: ff9200
+    trailColor: ff9200
+    makeFire: true
+    status: burning
+    statusDuration: 100
+  }
+  blast-compound: {
+    type: MissileBulletType
+    damage: 10
+    lifetime: 35
+    splashDamage: 45
+    ammoMultiplier: 5
+    splashDamageRadius: 37
+    width: 7
+    speed: 5
+    height: 7
+    frontColor: ff7c7c
+    backColor: ff5c5c
+    trailColor: ff5c5c
+    status: blasted
+    statusDuration: 100
+  }
+}
+category: turret
+requirements: [
+  lead/45
+  plastanium/15
+]
+research: salvo

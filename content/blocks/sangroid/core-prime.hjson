@@ -1,0 +1,18 @@
+Type: CoreBlock
+Name: Core: Prime
+description: The upgrade of the Nucleus Core. Heals itself occasionally. Its protector is the Delta.
+health: 12000
+itemCapacity: 20000
+size: 6
+category: effect
+unitType: 2k-delta
+unitCapModifier: 24
+requirements: [
+  copper/12000
+  lead/12000
+  silicon/10000
+  thorium/8000
+  obamium/5000
+  titanium/1500
+]
+research: core-nucleus

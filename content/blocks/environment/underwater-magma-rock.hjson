@@ -1,0 +1,31 @@
+type: Floor
+name: Underwater Magma Rock
+description: magma has somehow managed to seep in rocks underwater forming bubbles.
+variants: 0
+attributes: {
+  heat: 1.5
+}
+updateEffect: {
+    type: ParticleEffect
+    particles: 2
+    sizeFrom: 1
+    sizeTo: 3
+    length: 4
+    baseLength: 0
+    lifetime: 30
+    colorFrom: daeeff
+    colorTo: ffffff
+    cone: 360
+}
+isLiquid: true
+liquidMultiplier: 0.5
+cacheLayer: water
+speedMultiplier: 0.8
+liquidDrop: water
+emitLight: true
+lightRadius: 25
+lightColor: ffd59e
+brightness: 2
+radius: 25
+drownTime: 180
+damageTaken: 0.085

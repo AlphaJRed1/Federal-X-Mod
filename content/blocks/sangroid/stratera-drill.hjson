@@ -1,0 +1,33 @@
+name: Stratera Drill
+description: Uses powerful strategy mining. requires power and coolant.
+type: Drill
+size: 3
+tier: 7
+drillTime: 150
+rotateSpeed: 3.5
+consumes: {
+  power: 0.833
+  liquid: {
+    liquid: water
+     amount: 0.1
+     optional: false
+}
+}
+requirements: [
+  lead/150
+  titanium/75
+  silicon/75
+  obamium/35
+]
+category: production
+planet: sangroid
+researchCostMultiplier: 0
+research: {
+parent: express-drill
+objectives: [
+    {
+      type: SectorComplete
+      preset: armed-and-frosty
+    }
+  ]
+}

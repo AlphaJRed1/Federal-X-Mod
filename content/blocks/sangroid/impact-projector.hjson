@@ -1,0 +1,23 @@
+type: DirectionalForceProjector
+name: Impact Projector
+description: Requires armafluid to power. Shields greatly in one direction.
+health: 920
+size: 3
+width: 150
+length: 150
+padSize: 450
+shieldHealth: 3100
+consumes: {
+  power: 5.6
+  liquid: {
+    liquid: armafluid
+    amount: 0.1
+  }
+}
+requirements: [
+carbonic-alloy/15
+silicon/50
+titanium/55
+]
+category: effect
+research: force-projector

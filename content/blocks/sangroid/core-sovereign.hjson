@@ -1,0 +1,20 @@
+Type: CoreBlock
+Name: Core: Sovereign
+description: The Sovereign absorbs lasers, can produce power, and has high armor. It is the final installment to the Serpulo/Sangroid Cores.
+health: 28500
+armor: 30
+itemCapacity: 25000
+size: 7
+category: effect
+absorbLasers: true
+unitType: 2l-medial
+unitCapModifier: 32
+requirements: [
+lead/15000
+titanium/2500
+plastanium/1500
+uranium/2500
+mitaton/1450
+carbonic-alloy/1000
+]
+research: core-prime

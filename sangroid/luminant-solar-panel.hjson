@@ -1,0 +1,13 @@
+type: SolarGenerator
+name: Luminant Solar Panel
+description: A solar panel that can be placed on water. Generates a lot of power.
+size: 5
+powerProduction: 11.816
+requirements: [
+lead/550
+carbonic-alloy/15
+silicon/125
+obamium/35
+]
+category: power
+research: vapor-pressurizer

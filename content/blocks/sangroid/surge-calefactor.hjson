@@ -1,0 +1,76 @@
+type: GenericCrafter
+name: Surge Calefactor
+description: Uses the essence of the phase-fabric to duplicate items to make more alloys.
+size: 4
+hasPower: true
+hasItems: true
+craftTime: 135
+updateEffect: generatespark
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawFlame
+}
+{
+type: DrawMultiWeave
+}
+]
+}
+craftEffect: {
+    type: multiEffect
+    lifetime: 80
+    effects: [
+        {
+    type: ParticleEffect
+    particles: 10
+    sizeFrom: 3
+    sizeTo: 0
+    length: 45
+    baseLength: 0
+    lifetime: 80
+    colorFrom: fff24d
+    colorTo: fffabc
+    cone: 360
+    }
+    {
+    type: WaveEffect
+    lifetime: 30
+    rotation: 2.5
+    sprite: surge-calefactor-wave
+    sizeFrom: 0
+    sizeTo: 50
+    strokeFrom: 5
+    strokeTo: 0
+    colorFrom: fffabc
+ interp: pow5Out
+    colorTo: fff24d
+   lenFrom: 30
+   lenTo: 0
+          }
+      ]
+    }
+consumes: {
+  power: 7.9
+  items: {
+    items: [
+      copper/1
+      lead/3
+      titanium/2
+      silicon/2
+      phase-fabric/1
+    ]
+  }
+}
+requirements: [
+lead/160
+thorium/100
+silicon/100
+phase-fabric/15
+]
+category: crafting
+research: alloy-smelter
+outputItem: surge-alloy/3

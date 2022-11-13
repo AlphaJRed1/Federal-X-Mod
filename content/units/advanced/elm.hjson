@@ -1,0 +1,84 @@
+type: tank
+Name: Elm
+description: Elm is similar to Vanquish, but it fires 2 missiles, has 2 salvos and a giant missile that explodes into multiple other missiles.
+speed: 0.45
+health: 1490
+armor: 55
+itemCapacity: 0
+rotateSpeed: 1.5
+hitSize: 20
+rotateSpeed: 2
+faceTarget: false
+lightRadius: 220
+   treadRects: []
+rotateShooting: false
+treadPullOffset: 5
+weapons: [
+ {
+    name: elm-gun
+   layerOffset: 0.2
+    x: 0
+    y: 0
+parts: [
+    {
+        suffix : -barrel
+        type : RegionPart
+         mirror: false
+         under: false
+         moveX: 0
+         moveY: -3
+         moveRot: 0
+         progress: reload
+          x: 0
+          y: 0
+    }
+]
+    reload: 125
+   rotate: true
+   mirror: false
+  top: true
+cooldownTime: 100
+   rotateSpeed: 4
+    recoil: 3.4
+    shootSound: explosionBig
+    bullet: {
+spawnUnit: elm-bomb
+    }
+ }
+ {
+    name: acacia-gun
+    x: 7.1
+    y: -8.5
+parts: [
+    {
+        suffix : -part
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 0
+         moveY: -2
+         moveRot: -10
+         progress: reload
+          x: 5
+          y: 0
+    }
+]
+    reload: 45
+   rotate: true
+   rotateSpeed: 4
+  top: true
+   layerOffset: 0.2
+shoot: {
+shots: 2
+shotDelay: 5
+}
+    recoil: 1
+    shootSound: shootBig
+    bullet: {
+spawnUnit: tank-bomb
+    }
+ }
+]
+
+
+

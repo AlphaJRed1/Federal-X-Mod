@@ -1,0 +1,45 @@
+Name: Divergential Generator
+description: An upgraded version of the Differential Generator, uses infernite and armafluid to create power.
+type: ConsumeGenerator
+size: 3
+hasItems: true
+hasLiquids: true
+hasPower: true
+liquidCapacity: 30
+itemDuration: 300
+powerProduction: 101.416
+generateEffect: generatespark
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawWarmupRegion
+}
+{
+type: DrawLiquidRegion
+drawLiquid: armafluid
+}
+]
+}
+consumes: {
+  liquid: {
+    liquid: armafluid
+    amount: 0.2
+  }
+  items: {
+    items: [
+      infernite/1
+    ]
+  }
+}
+requirements: [
+   mitaton/25
+  obamium/50
+  silicon/50
+  plastanium/25
+]
+category: power
+research: differential-generator

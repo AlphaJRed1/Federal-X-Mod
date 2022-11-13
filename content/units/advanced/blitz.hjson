@@ -1,0 +1,48 @@
+Name: Blitz
+description: Fires missiles that releases shards and sparks while moving.
+type: flying
+flying: true
+health: 1450
+armor: 0
+speed: 5.5
+rotateSpeed: 6
+drag: 0.05
+accel: 0.1
+hitSize: 17
+engineOffset: 14
+engineSize: 6
+maxRange: 150
+rotateShooting: true
+lightRadius: 200
+parts: [
+    {
+        type : FlarePart
+radiusTo: 35
+  stroke: 8
+rotation: 45
+radius: 0
+y: -2
+color: eca7e4
+followRotation: true
+progress: warmup
+    }
+]
+weapons: [
+  {
+  name: blitz-bomb
+  inaccuracy: 0
+  shootSound: bigshot
+  spacing: 0
+   alternate: false
+  x: 6
+shootCone: 180
+  y: 5
+  recoil: 7
+  layerOffset: -0.001
+  reload: 85
+  bullet: {
+  recoil: 1
+spawnUnit: blitz-bomb
+  }
+ }
+]

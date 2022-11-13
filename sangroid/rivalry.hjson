@@ -1,0 +1,103 @@
+Type: PowerTurret
+Name: Rivalry
+health: 3875
+description: Fires an invisible beam of light at enemies.
+size: 4
+shootEffect: shootLiquid
+smokeEffect: null
+shootCone: 20
+shootSound: tractorbeam
+targetAir: true
+shootWarmupSpeed: 0.05
+minWarmup: 0.96
+cooldownTime: 100
+range: 400
+reload: 1
+recoil: 0
+inaccuracy: 0
+shots: 1
+drawer: {
+type: DrawTurret
+parts: [
+    {
+        suffix : -blade
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 0
+         moveY: -2
+         moveRot: -45
+         progress: warmup
+          x: 4
+          y: -5
+    }
+    {
+        suffix : -blade
+        type : RegionPart
+         mirror: true
+         under: true
+         moveX: 1
+         moveY: -1
+         moveRot: -60
+         progress: warmup
+          x: 4
+          y: -10
+    }
+    {
+        type : ShapePart
+         mirror: false
+         under: false
+       color: ffffff
+         circle: true
+        hollow: true
+       stroke: 0
+      strokeTo: 1.6
+        radius: 4
+         moveX: 0
+         moveY: 0
+         moveRot: 0
+         progress: warmup
+          x: 0
+          y: 0
+    }
+    {
+        type : ShapePart
+         mirror: false
+         under: false
+       color: ffffff
+         circle: true
+        hollow: true
+       stroke: 0
+      strokeTo: 3
+        radius: 10
+         moveX: 0
+         moveY: 0
+         moveRot: 0
+         progress: warmup
+          x: 0
+          y: 0
+    }
+]
+}
+consumes: {
+  power: 15.6
+}
+shootType: {
+  type: RailBulletType
+    damage: 16.6
+    pierceDamageFactor: 0.3
+    length: 400
+    width: 6
+    height: 10
+    lifetime: 6
+    region: federal-x-mod-azure
+    hitEffect: none
+}
+requirements: [
+carbonic-alloy/95
+titanium/575
+silicon/150
+mitaton/145
+]
+category: turret
+research: lavender

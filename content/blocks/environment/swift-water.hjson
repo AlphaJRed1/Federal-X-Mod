@@ -1,0 +1,15 @@
+type: Floor
+variants: 0
+name: Swift Water
+description: speeds up units who step on this.
+isLiquid: true
+liquidMultiplier: 1
+cacheLayer: water
+speedMultiplier: 0.65
+liquidDrop: water
+status: wet
+statusDuration: 200
+emitLight: false
+attributes: {
+ swift: 1.2
+}
