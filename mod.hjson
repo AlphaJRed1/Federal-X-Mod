@@ -1,6 +1,6 @@
 name: "Federal-X-Mod"
 displayName: "[orange]Federal-X[gold] Mod" //what displays in the mod selection menu
 author: "AJR1"
-description: "better"
-version: "3.0"
+description: "Extends the Serpulo Tech with monoliths, semi-guardians, turrets and all whatnot."
+version: "1.0"
 minGameVersion: "136"
