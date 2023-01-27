@@ -76,3 +76,4 @@ launchCandidates: []
 hiddenItems: [
   graphite, plastanium, phase-fabric
 ]
+sectorSize: 2
