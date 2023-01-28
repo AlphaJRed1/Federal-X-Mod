@@ -1,7 +1,7 @@
 name: Obamium Wall
 description: A highly armored wall capable of healing surronding blocks at close range.
 type: RegenProjector
-health: 370
+health: 460
 size: 1
 hasItems: false
 hasPower: true
