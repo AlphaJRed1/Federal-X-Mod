@@ -1,29 +1,28 @@
 name: Obamium Wall
 description: A highly armored wall capable of healing surronding blocks at close range.
-type: MendProjector
-health: 1200
+type: RegenProjector
+health: 370
 size: 1
-reload: 220
 hasItems: false
-hasPower: false
-range: 8
+hasPower: true
+conductsPower: true
+range: 2
 color: ffffff
-phaseBoost: 1
 healPercent: 1
-phaseRangeBoost: 1
 requirements: [
   obamium/6
   silicon/2
 ]
+consumes: {
+  power: 0.05
+}
 category: defense
-planet: sangroid
-researchCostMultiplier: 0
 research: {
-parent: titanium-wall
-objectives: [
+  parent: titanium-wall
+  objectives: [
     {
-      type: SectorComplete
-      preset: federal-start
+    type: SectorComplete
+    preset: federal-start
     }
   ]
 }
