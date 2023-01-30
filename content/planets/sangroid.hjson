@@ -4,14 +4,16 @@ mesh: {
   type: NoiseMesh
   planet: sangroid
   seed: 11
-  divisions: 7
+  divisions: 5
   color1: 9d8e7f
-  color2: c1df95
-  radius: 2
+  color2: 41414A
+  radius: 0.9
   octaves: 3
   persistence: 0.8
-  scale: 1
+  scale: 2
   mag: 1.1
+  coct: 3
+  cscl: 0.4
 }
 #the mesh used for clouds. commented out since this planet has no clouds
 #cloudMesh: {}
@@ -39,7 +41,7 @@ atmosphereRadOut: 3
 alwaysUnlocked: true
 accessible: true
 #day-night cycle
- startSector: 35
+ startSector: 15
 updateLighting: true
 #a seed of the generator. if -1, planet id is picked instead
 sectorSeed: 2
@@ -74,5 +76,5 @@ solarSystem: sun
 launchCandidates: []
 #items not available in this planet
 hiddenItems: [
-  graphite, plastanium, phase-fabric
 ]
+sectorSize: 2

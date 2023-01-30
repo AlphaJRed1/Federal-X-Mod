@@ -24,6 +24,7 @@ upgrades: [
   [1d-slash,1e-detonator]
   [1i-eidolon, 1j-phantasm]
   [2c-tonga, 2d-mariana]
+  [1x-dose, 1y-galaxi]
   [2h-essence, 2i-archetype]
 ]
 requirements: [
